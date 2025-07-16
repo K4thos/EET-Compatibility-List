@@ -1,561 +1,444 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Mod Compatibility List for EET</title>
-<meta charset="UTF-8">
-<style>
-body  {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;  /* formerly 12px */
-  text-align: left;
-  color: #000;
-  background-color: #f2f2fc;
-  margin: 35px 50px 35px 50px;
-  padding: 0px;
-  }
-img {border : 0;}
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  color: #0000cd;
-  font-variant: small-caps;
-  position: relative;
-  background-color: #fff;
-  z-index:10;
-  }
-h1, h2 {
-  margin-right: 20px;
-  margin-left: 20px;
-  padding: 5px;
-  border:1px solid #888;
-  z-index:10;
-  }
-h3, h4, h5, h6 {
-  border-left:10px solid #0000cd;
-  padding-left:5px;
-  border-bottom:1px dotted #0000cd;
-  }
-h1 {font-size : 1.42rem;} /* formerly 17px */
-h2 {font-size : 1.33rem;} /* formerly 16px */
-h3 {font-size : 1.25rem;} /* formerly 15px */
-h4 {font-size : 1.17rem;} /* formerly 14px */
-h5 {font-size : 1.08rem;} /* formerly 13px */
-h6 {font-size : 1rem;}
-p, ul, table {clear:left;}
-a, a:link, a:visited, a:hover, a:active {
-  color: #0012ff;
-  margin: 0;
-  padding: 0;
-  border-width: 0;
-  }
-a:visited {color : #0000cd;}
-table {
-  table-layout: auto;
-  width: 100%;
-  padding: 20px;
-  }
-.grow { width: 100%; }
-td, th {
-  text-align: center;
-  vertical-align: baseline;
-  padding: 5px;
-  border: 1px outset #aaa;
-  }
-th {
-  background-color: #0000cd;
-  color: #fff;
-  font-weight: bold;
-  }
-hr {
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
-  }
-.leftalign, table.leftalign tr th, table.leftalign tr td {text-align: left;}
-.section {
-  position: relative;
-  border: 1px dotted #bbb;
-  background-color: #fff;
-  margin: -30px 0px 30px 0px;
-  padding: 20px 20px 10px 20px;
-  }
-.kit_description {
-  position: relative;
-  display: block;
-  background-color: #f0f0f0;
-  border-left: 4px solid #ccc;
-  border-top: 1px dotted #ccc;
-  }
-.portrait_thumb {
-  float: left;
-  width: 125px;
-  height: 125px;
-  padding: 5px;
-  text-align: center;
-  overflow: auto;
-  }
-a.spoiler, a:link.spoiler, a:active.spoiler, a:visited.spoiler, a:hover.spoiler {
-  color: #ccc;
-  background-color: #ccc;
-  border: 1px dotted #888;
-  text-decoration: none;
-  }
-a:hover.spoiler {
-  color: #000;
-  border: 1px dotted #ccc;
-  }
-.code {
-  font-family: 'Courier New', Courier, mono;
-  border: 1px solid #555;
-  border-left: 10px solid #555;
-  background-color: #eee;
-  padding: 5px;
-  }
-.deprecated {color:#666;}
-.code p {
-  text-align: left;
-  font-size: 100%;
-  text-indent: 0px;
-  margin: 5px 0 10px 0;
-}
-.tg {
-  border-collapse:collapse;
-  border-spacing:0;
-  margin:0px auto;
-}
-.tg td{
-  color: #333;
-  text-align:justify;
-  padding:10px 5px;
-  border-style:solid;
-  border-width:1px;
-  overflow:hidden;
-  word-break:normal;
-}
-.tg th{
-  text-align:center;
-  font-weight:normal;
-  padding:10px 5px;
-  border-style:solid;
-  border-width:1px;
-  overflow:hidden;
-  word-break:normal;
-}
-</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="style/g3readme_cam_022916.css" type="text/css" />
+<link href="style/g3icon.ico" rel="icon" type="image/bmp" />
 </head>
 <body>
-<h1>Mod Compatibility List for EET</h1>
-<div class="section">
-
-<p><strong><a href="https://www.gibberlings3.net/forums/topic/27741-mod-compatibility-list-for-eet/">Compatbility feedback topic</a></strong></p>
-<p>Last Updated: See date <a href="https://github.com/K4thos/EET-Compatibility-List/commits/master">here</a></p>
-<p>This compatibility list will be frequently updated. It is highly recommended that you follow what is said here if you are planning to make EET installation with mods.</p>
-<p><a href="https://github.com/K4thos/EET-Compatibility-List/commits/master">Compatbility List Update Record</a></p>
-
-<p>Installation tips and notes on compatibility</p>
-<ul>
-    <li>tools like <a href="https://forums.beamdog.com/discussion/74335/project-infinity-public-beta/p1">Project Infinity</a> (successor of BWS) are the preferable ways to install mods for Windows users. Please read Project Infinity FAQ regarding EET installation instructions.</li>
-	<li>it is highly recommended to check out the installation order and compatibility between mods. Just keep in mind that in EET game some BG1 mods need to be installed on BG:EE before EET installation on BG2:EE.</li>
-	<li>current compatibility between EET and other modifications are listed below.</li>
-	<li>note that versions of modifications below those stated are not compatible.</li>
-	<li>the compatibility list does not imply that the other modifications mentioned are compatible with each other. Make sure you understand the specific requirements of each modification by looking at their readmes before you go into hardcore mixing and matching.</li>
-</ul>
+<div id="container">
+  <div class="ribbon_menu">
+    <ul>
+      <li><a href="#table">Table of Contents</a></li>
+      <li><a href="#bgee">Mods Before EET</a></li>
+      <li><a href="#native">Mods After EET</a></li>
+    </ul>
+    <span><img src="style/g3_logo_2018.gif" alt="G3" width="237" height="83" /></span> </div>
+  <div class="ribbon_bubble">
+    <div class="ribbon_rectangle">
+      <h1>Mod Compatibility List for EET</h1>
+    </div>
+    <div class="ribbon_triangle-l"></div>
+    <div class="ribbon_triangle-r"></div>
+    <div class="section">
+      <p><strong><a href="https://www.gibberlings3.net/forums/topic/27741-mod-compatibility-list-for-eet/">Compatbility feedback topic</a></strong></p>
+      <p>Last Updated: See date <a href="https://github.com/K4thos/EET-Compatibility-List/commits/master">here</a></p>
+      <p>This compatibility list will be frequently updated. It is highly   recommended that you follow what is said here if you are planning to   make EET installation with mods.</p>
+      <p><a href="https://github.com/K4thos/EET-Compatibility-List/commits/master">Compatbility List Update Record</a></p>
+      <p>Installation tips and notes on compatibility</p>
+      <ul>
+        <li>tools like <a href="https://forums.beamdog.com/discussion/74335/project-infinity-public-beta/p1">Project Infinity</a> (successor of BWS) are the preferable ways to install mods for Windows   users. Please read Project Infinity FAQ regarding EET installation   instructions.</li>
+        <li>it is highly recommended to check out the installation order and   compatibility between mods. Just keep in mind that in EET game some BG1   mods need to be installed on BG:EE before EET installation on BG2:EE.</li>
+        <li>current compatibility between EET and other modifications are listed below.</li>
+        <li>note that versions of modifications below those stated are not compatible.</li>
+        <li>the compatibility list does not imply that the other modifications   mentioned are compatible with each other. Make sure you understand the   specific requirements of each modification by looking at their readmes   before you go into hardcore mixing and matching. </li>
+      </ul>
+    </div>
+    <div class="ribbon_rectangle_h2"> <a id="table" name="table"></a>
+      <h2> Table of Contents <a href="#table" rel=""><img alt="Link to this section" height="9" width="14" src="style/link.png" /></a></h2>
+    </div>
+    <div class="ribbon_triangle_h2-l"></div>
+    <div class="ribbon_triangle_h2-r"></div>
+    <div class="section">
+      <ol>
+        <li><a href="#bgee">Mods installed on BG:EE previous to installing EET on BG2:EE</a></li>
+        <li><a href="#native">Mods installed after EET main component on BG2:EE</a></li>
+      </ol>
+    </div>
+    <div class="ribbon_rectangle_h2"> <a id="bgee" name="bgee"></a>
+      <h2>Mods installed on BG:EE previous to installing EET on BG2:EE <a href="#bgee" rel=""><img alt="Link to this section" height="9" width="14" src="style/link.png" /></a></h2>
+    </div>
+    <div class="ribbon_triangle_h2-l"></div>
+    <div class="ribbon_triangle_h2-r"></div>
+    <div class="section">
+      <p>As a result of the conversion method explained in the readme, EET provides limited support for mods installed on BG:EE previous to installing EET on BG2:EE. Theoretically it could support almost any BG:EE mod with little to no work needed (for example adjusting BG1NPC Project to work with this method required just a few lines of code. Many mods don't need anything changed at all) as the mod resources are treated like vanilla content and patched &quot;on the fly&quot; during EET installation if needed. To ensure that BG:EE mods not intervene with BG2:EE portion of the game EET prevents starting the installation when unrecognised mod is detected.</p>
+      <p>This section can be treated as a temporary solution. Hopefully more and more mods will receive updates to support EET natively down the line, so they could be installed after EET on BG2:EE.</p>
+      <p>Here is a list of supported mods installed on BG:EE</p>
+      <ul>
+        <li><a href="https://forums.beamdog.com/discussion/38824/aerie-in-bg-ee-v1-1/p1">Aerie for BG:EE</a> v1.1 until v2.0</li>
+        <li><a href="https://github.com/Pocket-Plane-Group/bg1ub/releases">BG1 Unfinished Business</a> v14 [BETA] or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/18833/bg-ee-dark-horizons-released/p1">Dark Horizons BG:EE</a> v2.12 or above</li>
+        <li><a href="https://github.com/ArtemiusI/Drake/releases">Drake NPC</a> v0.1 BETA</li>
+        <li><a href="https://forums.beamdog.com/discussion/29969/drizzt-saga-v3-released-now-bgee-compatible/p1">Drizzt Saga</a> v3 or above (select default option during installation - despite the name it's compatible with both EET Worldmap and BP-BGT Worldmap)</li>
+        <li><a href="https://www.gibberlings3.net/mods/fixes/eefp/">EE Fixpack</a> <strong>must be installed</strong> on both BGEE and BG2EE prior to running EET</li>
+        <li><a href="http://mirandir.baldursgateworld.fr/garrick-tt/">Garrick: Tales of a troubadour</a> v1.24 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/15867/mod-npc-margarita-zelleod/p1">Margarita NPC</a> v1.0 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/59889/rough-world-beta/p1">Rough World</a> vBeta or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/23861/bg-ee-mod-saradas-magic-released/p1">Saradas Magic</a> v1.1 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/1164-sharteel-npc-mod-for-sod/">Sharteel NPC mod for SoD</a> Pre-Release 1.1 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/42721/npc-mod-sirene-npc-for-bg-ee-v1-0/p1">Sirene NPC</a> v1.0 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/33291/tenya-thermidor-v1-3/p1">Tenya Thermidor</a> v1.5 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/42168/mod-the-stone-of-askavar-for-totsc-tutu-bgt-and-bg-ee/p1">The Stone of Askavar</a> v1.9 or above (select default option during installation - despite the name it's compatible with both EET Worldmap and BP-BGT Worldmap)</li>
+        <li><a href="https://forums.beamdog.com/discussion/15959/mod-twas-a-slow-boat-from-kara-tur-queststorenew-items-release-90/p1">T'was a Slow Boat from Kara-Tur</a> v.90 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/verrsza-bg1ee/">Verr'Sza NPC</a> v2.4 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/white-npc/">White NPC</a> v2.2 or above</li>
+      </ul>
+      <p>Compatibility with EET doesn't mean that mods are fully compatible with each other - refer to BWP PDF files, original readme files and forum discussions for compatibility details. For example Garrick : tales of a troubadour readme file states that it conflicts with Garrick's Infatuation and Tenya NPC and it is not recommended to install them together. Same readme file also mentions that the mod requires BG1 NPC Project installed before it.</p>
+      <p>Mods have been tested with versions mentioned in above list. It's unlikely that newer ones will break something, as the compatibility changes made to them during EET installation are minimal, if made at all. As long as the mod won't suddenly conflict with BG2:EE resources it should be still supported regardless of the chnges done to it. Although let us know if you notice any problems.</p>
+    </div>
+    <div class="ribbon_rectangle_h2"> <a id="native" name="native"></a>
+      <h2>Mods installed after EET main component on BG2:EE <a href="#native" rel=""><img alt="Link to this section" height="9" width="14" src="style/link.png" /></a></h2>
+    </div>
+    <div class="ribbon_triangle_h2-l"></div>
+    <div class="ribbon_triangle_h2-r"></div>
+    <div class="section">
+      <p>This list, sorted in alphabetical order, contains BG2:EE and BG:EE mods that have native EET support or don't need anything changed to work natively. Some of them are only available as a beta for now (older versions didn't have EET support), so keep that in mind.</p>
+      <ul>
+        <li><a href="http://www.shsforums.net/files/download/1205-35-edition-weapon-style-rebalance/">3.5e Weapon Style Rebalance</a></li>
+        <li><a href="https://github.com/UnearthedArcana/5E_spellcasting/releases">5E-Style Spellcasting</a> v1.1 or above</li>
+        <li><a href="https://www.gibberlings3.net/files/file/702-a-mod-for-the-orderly/">A Mod for the Orderly</a> v7.0 or above</li>
+        <li><a href="http://www.shsforums.net/topic/61094-acs-miscellaneous-tweaks/">AC's Miscellaneous Tweaks</a> RC1 or above</li>
+        <li><a href="https://www.gibberlings3.net/files/file/1007-aces-enchanters-portrait-pack/">Ace's Enchanters Portrait Pack</a></li>
+        <li><a href="https://github.com/Argent77/A7-Achievements/releases">Achievements!</a> v1.0 or above</li>
+        <li><a href="https://www.baldurs-gate.de/index.php?resources/adalons-blood-silberdrachenblutmod.5/">Adalon's Blood</a> v1.4 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/Adrian_NPC/releases">Adrian NPC</a> V4.0 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/139-adventures-in-papperland/">Adventures in Papperland</a> v6.0 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/38824/aerie-in-bg-ee-v1-1/p2">Aerie for BG:EE</a> v2.0 or above (The-Gate-Project updates)</li>
+        <li><a href="https://github.com/Argent77/DjinniCompanion/releases">Afaaq, the Djinni Companion</a> v2.2 or above</li>
+        <li><a href="https://www.baldurs-gate.de/index.php?resources/jasteys-ajantis-bg1-expansion.2/">Ajantis BG1 Expansion</a> v10 or above</li>
+        <li><a href="https://www.gibberlings3.net/files/file/994-ajantis-portrait-pack/">Ajantis Portrait Pack</a> v3</li>
+        <li><a href="http://www.shsforums.net/topic/59054-ajocmod-for-ee-and-eet/">Ajoc's minimod for EE and EET</a> v1.0 or above (this update requires resources from <a href="http://www.shsforums.net/files/file/119-ajocs-minimod/">original ajocmod</a>)</li>
+        <li><a href="http://www.shsforums.net/files/file/1053-almaterias-restoration-project/">Almateria's Restoration Project</a> v8.2.7 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/quests/alternatives/">Alternatives</a> v12 or above</li>
+        <li><a href="https://www.gibberlings3.net/files/file/684-amaureas-bg-portraits/">Amaurea's BG Portraits</a></li>
+        <li><a href="https://www.gibberlings3.net/files/file/683-amaureas-bg2-portraits/">Amaurea's BG2 Portraits</a></li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/amber/">Amber</a> v5 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/angelo/">Angelo NPC</a> v6</li>
+        <li><a href="https://github.com/thisisulb/AnimalCompanions">Animal Companions</a> v1.3 or above</li>
+        <li><a href="https://www.gibberlings3.net/files/file/687-anishai-one-day-npc/">Anishai One Day NPC</a> v2 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/quests/anotherfinehell/">Another fine Hell (SoD Mod)</a></li>
+        <li><a href="http://www.shsforums.net/files/file/1001-arath/">Arath</a> v4 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/51904/mod-artaport-4-0/p1">Artaport</a> (EE native version of <a href="http://www.shsforums.net/files/file/1033-paintbg/"> PaintBG)</a> v2 or above</li>
+        <li><a href="https://github.com/Gitjas/Ascalons_Breagar/releases/latest">Ascalon's Breagar</a> v7.0 or above</li>
+        <li><a href="https://github.com/Gitjas/Ascalons_Questpack/releases">Ascalon's Questpack</a> v2.02 or above</li>
+        <li><a href="https://github.com/InfinityMods/Ascension">Ascension</a> v1.5 BETA or above</li>
+        <li><a href="https://github.com/Pocket-Plane-Group/Assassinations/releases">Assassinations</a> v13 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/alabaster-sands/">Athkatlan Grounds: Alabaster Sands</a> v1.2 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/bridges-block/">Athkatlan Grounds: Bridge's Block</a> v1.0 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/oozes-lounge/">Athkatlan Grounds: Ooze's Lounge</a> v2.3 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/southern-edge/">Athkatlan Grounds: Southern Edge</a> v1.0 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/tangled-oak-isle/">Athkatlan Grounds: Tangled Oak Isle</a> (since v0.91)</li>
+        <li><a href="http://www.shsforums.net/topic/38261-atweaks-v451-released/">aTweaks</a> v4.50 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/65891/v3-2-aura-a-gnome-artificer-npc-for-bg-ee-sod/p1">Aura NPC</a> v3.2 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/auren/">Auren Aseph NPC</a> v10</li>
+        <li><a href="https://github.com/LCA-EET/AutoLoot/releases">AutoLoot</a> v1 or above</li>
+        <li><a href="https://github.com/Pocket-Plane-Group/Back_to_Brynnlaw/releases">Back to Brynnlaw</a> v7 or above</li>
+        <li><a href="https://www.gibberlings3.net/forums/topic/27768-baldurs-gate-graphics-overhaul-for-eet/">Baldur's Gate Graphics Overhaul for EET</a> v beta 2.0 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/quests/bgqe/">Baldur's Gate Mini Quests and Encounters</a> v15 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/bg-romantic-encounters/">Baldur's Gate Romantic Encounters Modification</a> v2.0 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/quests/baldurans-seatower/">Balduran's Seatower</a> vEAOB or above</li>
+        <li><a href="http://www.shsforums.net/files/file/1216-bank-of-baldurs-gate-for-eet/">Bank of Baldur's Gate</a></li>
+        <li><a href="https://github.com/Argent77/A7-BanterAccelerator/releases">Banter Accelerator for Enhanced Edition games</a> v1.0 or later</li>
+        <li><a href="https://github.com/Pocket-Plane-Group/Banter_Pack/releases">Banter Packs</a> v15 or above</li>
+        <li><a href="https://github.com/ArtemiusI/Bardic-Wonders">Bardic-Wonders</a></li>
+        <li><a href="https://www.gibberlings3.net/mods/tweaks/appraisal/">Bardic Appraisal</a></li>
+        <li><a href="https://github.com/thisisulb/BearWalkerKit">Bear Walker - a Werebear / Ranger Kit</a> v3.0 or above</li>
+        <li><a href="https://github.com/D2-mods/Better-IWD-Pregen/releases">Better IWD Pregen - a minimalist script and tweak pack</a> v0.6 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/bg1npc/">BG1 NPC Project</a> v24.2 and above</li>
+        <li><a href="https://www.gibberlings3.net/files/file/692-bg1-npc-project-music-pack/">BG1 NPC Project Music Pack</a> v6 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/82463/mod-bg1-npcs-for-soa-tob">BG1 NPCs for SoA &amp; ToB</a> v10 or above</li>
+        <li><a href="http://www.shsforums.net/topic/55573-bg-ee-classic-movies/">BG:EE Classic Movies</a> v2.3.0 or above (install after EEUITweaks User Interface Mods Collection)</li>
+        <li><a href="https://github.com/GraionDilach/BGEESpawn">BGEE Leveled Spawns Mod</a> v0.4 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/58941/mod-bgeenpc-tweaks-for-bgee-sod-bg2ee-eet/p1">BGEENPC Tweaks for BGEE / SOD / BG2EE / EET</a> v1.0 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/82484/released-black-hearts-bg1/p1">Black Hearts</a> with dedicated EET variant</li>
+        <li><a href="https://www.gibberlings3.net/files/file/699-blonde-imoen/">Blonde Imoen</a> v6</li>
+        <li><a href="http://www.shsforums.net/files/file/772-bolsa/">Bolsa Merchant</a> v6.0.0 or above</li>
+        <li><a href="https://www.baldurs-gate.de/index.php?resources/brages-redemption.42/">Brage's Redemption Mod</a> v0.1 or above</li>
+        <li><a href="https://baldurs-gate.de/index.php?resources/brandock-der-magier.48/">Brandock the Mage NPC Mod</a> vBeta1 or above</li>
+        <li><a href="https://github.com/Pocket-Plane-Group/Branwen_for_BGII/releases">Branwen for BG2</a> v4 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/bristlelick/">Bristlelick NPC</a> v2.2 or above</li>
+        <li><a href="https://www.gibberlings3.net/forums/topic/35838-ui-bubbs-spell-menu-v45/">Bubb's Spell Menu Extended</a> v2.2 or above (must be installed after setup-EET_gui, can be installed even after setup-EET_end)</li>
+        <li><a href="https://www.gibberlings3.net/mods/tweaks/bs/">Bullet Sponge (BS) Mod</a> - v1</li>
+        <li><a href="https://github.com/GwendolyneFreddy/butchery">BuTcHeRy</a> v4.0 or above</li>
+        <li><a href="https://www.gibberlings3.net/files/file/1010-calin/">Calin Romance Mod</a> v1.0 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/CerndFriendship/releases">Cernd Friendship</a> v1.0 or above</li>
+        <li><a href="https://github.com/Argent77/A7-ChaosSorcerer/releases">Chaos Sorcerer Kit</a> v1.0 or above</li>
+        <li><a href="https://github.com/Raduziel/Charlatan-Kit/releases">Charlatan (Bard Kit for PC or Eldoth)</a> v2.0 or above</li>
+        <li><a href="https://github.com/AstroBryGuy/ChattyImoen">Chatty Imoen</a> v1.3 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/Check_the_Bodies/releases/latest">Check the Bodies</a> v2.2 or above (versions before v3.0 require BP-BGT Worldmap)</li>
+        <li><a href="https://downloads.weaselmods.net/download/foundling-between-the-shades/">Colours of Infinity: Foundling</a> v3 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/i-shall-never-forget/">Colours of Infinity: I Shall Never Forget</a> v5.2 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/innershade/">Colours of Infinity: Innershade</a> v9.0 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/tales-of-the-deep-gardens/">Colours of Infinity: Tales of the Deep Gardens</a> v12 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/the-white-queen/">Colours of Infinity: The White Queen</a> v6.0 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/yvette-romance/">Colours of Infinity: Yvette Romance</a> v4.0 or above</li>
+        <li><a href="https://www.gibberlings3.net/files/file/1002-continuous-npc-portraits/">Continuous NPC Portraits</a> v1 or above</li>
+        <li><a href="https://github.com/Argent77/A7-NoEENPCs/releases">Convenient Enhanced Edition NPCs</a> v4 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/coran/">Coran's BG Extended Friendship Talks</a> v5 or above</li>
+        <li><a href="https://github.com/Pocket-Plane-Group/Coran_for_BGII/releases">Coran for BG2</a> v6 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/corthala/">Corthala Romantique</a> v1 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/crossmod/">Crossmod Banter Pack for Baldur's Gate II</a> v16</li>
+        <li><a href="http://www.shsforums.net/files/file/913-custom-kits-the-spellsword/">Custom Kits: The Spellsword</a> v1.4.1 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/614-ds-odd-quest-mod/">D's Odd Quest Mod</a> v2.0 or above</li>
+        <li><a href="https://github.com/D2-mods/D2-Weapon/releases">D2-Weapon - A Souls-inspired Weapon Pack</a> v1.0 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/1038-dace/">Dace</a> v3 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/DSotSC/releases">Dark Side of the Sword Coast (DSotSC) BGT/EET edition</a> vBETA or above (this is NOT version released for BG:EE)</li>
+        <li><a href="http://www.shsforums.net/files/file/842-darron/">Darron the BG2 Thief Guild Vendor</a> v2.0.0 or above</li>
+        <li><a href="https://github.com/Pocket-Plane-Group/deArnise_Romance/releases">de'Arnise Romance</a> v6 or above</li>
+        <li><a href="https://www.gibberlings3.net/forums/topic/30780-kit-pack-deities-of-faer%C3%BBn-bgee-bg2ee-iwdee-and-eet/">Deities Of Faerun (Cleric Kits)</a> v1.8.4 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/140-demon-summoning-ritual/">Demon Summoning Ritual</a> v8.0.0 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/kits/cleric/">Divine Remix</a> for now, please use <a href="https://github.com/Gibberlings3/Divine_Remix/archive/master.zip">latest Github version</a></li>
+        <li><a href="https://github.com/trinit2/Bg2Dorn/">Dorn Romance (SoA+ToB)</a>v3.2 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/50357/mod-dragonspear-ui-v2-42-now-compatible-with-bg2-ee">Dragonspear UI++</a></li>
+        <li><a href="https://downloads.weaselmods.net/download/in-love-undeath/">The Dreadful Tales: In Love, Undeath</a> v1.2 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/juniper-and-the-stone-leech/">The Dreadful Tales: Juniper and the Stone Leech</a> v1.2 or above</li>
+        <li><a href="https://github.com/thisisulb/DreamWalkerShamanKit">Dream Walker - a Shaman Kit</a> v1.2 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/62981/mod-druid-grove-makeover/p1">Druid Grove Makeover</a> v1 or above</li>
+        <li><a href="https://github.com/Pocket-Plane-Group/Dungeon_Crawl/releases">Dungeon Crawl</a> v11 or above</li>
+        <li><a href="https://www.pocketplane.net/dungeon-be-gone/">Dungeon-Be-Gone</a> v1.7</li>
+        <li><a href="https://downloads.weaselmods.net/download/dvaradime/">Dvaradime NPC</a> v1.3 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/Edwin_Romance/releases/latest">Edwin Romance</a> v2.08 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/71798/mod-eeex-v0-9-7-alpha">EEex</a> v0.2.0-alpha or above (can be installed even after setup-EET_end)</li>
+        <li><a href="https://github.com/K4thos/EET_Tweaks/releases/latest">EET Tweaks</a> v1.0 or above</li>
+        <li><a href="https://www.gibberlings3.net/forums/topic/30832-ui-eeuitweaks-mod-collection-all-ees/">EEUITweaks User Interface Mods Collection</a> v1.5 or above (can be installed even after setup-EET_end)</li>
+        <li><a href="https://downloads.weaselmods.net/download/eilistraees-song/">Eilistraee's Song</a> v6.0 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/74672/v1-59-emily-a-half-elf-archer-for-bg-ee-sod-and-eet/p1">Emily NPC</a> v1.59 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/tweaks/enemy_randomizer/">Enemy Randomizer</a> v1 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/other/endlessbg1/">Endless BG1</a> v1 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/other/enhanced-powergaming-scripts/">Enhanced Powergaming Scripts</a> v1.0 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/74158/mod-epic-thieving-more-benefits-from-high-thieving-skills/p1">Epic Thieving</a> v2.6 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/evandra/">Evandra</a> v1.0 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/quests/cliffette/">Every Mod and Dog (Mini-quests)</a> v8</li>
+        <li><a href="https://github.com/SpellholdStudios/Expanded_Thief_Stronghold/releases/latest">Expanded Thief Stronghold</a> v3.0.0 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/73749/extra-expanded-enhanced-encounters-module-download/p1">Extra Expanded Enhanced Encounters!</a> v2.0 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/1083-fade/">Fade</a> v5.1 (experimental) or above</li>
+        <li><a href="https://github.com/SpellholdStudios/Fading_Promises/releases">Fading Promises</a> v8 or above</li>
+        <li><a href="https://github.com/UnearthedArcana/Faiths_and_Powers/releases">Faiths and Powers (kitpack and divine caster/spell tweaks)</a> v0.74g or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/faldorn-bg2ee/">Faldorn (BG2EE) NPC mod</a> v1.3 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/fhaugy/">Fhaugy NPC mod</a> v1.00 or above</li>
+        <li><a href="https://github.com/Pocket-Plane-Group/Finch_NPC/releases">Finch NPC mod</a> v5 or above</li>
+        <li><a href="https://github.com/InfinityMods/FishingForTrouble">Fishing For Trouble</a> v3.1 pre-release or above</li>
+        <li><a href="https://github.com/Gibberlings3/Forgotten-Armament/releases">Forgotten Armament</a> v0.4-beta or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/quests/framed/">Framed</a> alternative chapter 6</li>
+        <li><a href="https://www.gibberlings3.net/mods/items/g3cip/">G3 Community Item Pack</a> - v1</li>
+        <li><a href="https://downloads.weaselmods.net/download/gahesh/">Gahesh NPC</a> v2.1 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/garrick/">Garrick's Infatuation</a> vBeta 4 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/gavin/">Gavin BG1 NPC</a> v12 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/gavin-bg2/">Gavin BG2 NPC</a> v22 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/glam-npc-pack/">Glam's BGEE NPC Pack (Littlun Plunkett, Vynd, Moidre, Dave, Flara)</a> v1 or above</li>
+        <li><a href="http://www.shsforums.net/topic/58696-mod-golem-construction-for-spellcasters/">Golem Construction for Spellcasters</a> v2.0 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/82008/graions-soundsets-pst-iwd-iwd2-bg-bg2-bgnpc-30-for-bg-sod-bg2-iwd-eet-ee-2-6/p1">Graion's Soundsets</a> (BG1 and BG2 sets are redundant for EET)</li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/grey-the-dog/">Grey the Dog</a> v1.0 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/HaerdalisFriendship/releases">Haer'Dalis Friendship</a> v1 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/984-haerdalis-romance/">Haer'Dalis Romance</a> v2.2</li>
+        <li><a href="http://www.shsforums.net/files/file/777-haiass-el-lobo/">Haiass el Lobo</a> v2.4 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/haldamir/">Haldamir NPC</a> v4</li>
+        <li><a href="https://forums.beamdog.com/discussion/76460/v1-48-helga-a-dwarven-priestess-of-haela-brightaxe-for-bg-ee-and-sod-and-eet/p1">Helga NPC</a> v1.48 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/134-heart-of-the-wood-item/">Heart of the Wood (Item)</a> v7.0.0 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/quests/htam/">Heroes, Thieves, and Moneylenders</a> v1.0 or above</li>
+        <li><a href="https://github.com/Gitjas/hiddenadventure/releases/latest">Hidden Adventures</a> vBeta4 or above</li>
+        <li><a href="https://github.com/Argent77/HQ-SoundClips-BG2EE/releases">High Quality soundclips for BG2EE extended content</a> v1.0 or above</li>
+        <li><a href="https://artisans-corner.com/house-rules/">House Rules Tweaks</a> 1.91 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/31-hubelpot-the-vegetable-merchant/">Hubelpot the Vegetable Merchant</a> v2.0.0 or above</li>
+        <li><a href="https://github.com/Raduziel/I-Hate-Undead-Kitpack/releases">I Hate Undead Kitpack</a> v2.4 or later</li>
+        <li><a href="https://github.com/SpellholdStudios/IEP_Extended_Banter/releases">IEP Extended Banters</a> v5.4 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/other/imoen4ever/">Imoen 4 Ever</a> v1 or above</li>
+        <li><a href="https://github.com/subtledoctor/Imoen-Can-Die/releases">Imoen Can Die</a> v1 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/ImoenFriendship/releases">Imoen Friendship</a> v3.3 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/other/imoenisstone/">Imoen is Stone</a> v1 or above</li>
+        <li><a href="http://imoen.blindmonkey.org/">Imoen Romance</a> v3.9 or above (updated recently, may need some testing)</li>
+        <li><a href="http://www.shsforums.net/files/file/1116-improved-archer-kit/">Improved Archer Kit</a> v2.2 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/804-improved-haerdalis-swords/">Improved Haer'Dalis Swords</a> v3.0.0 or above</li>
+        <li><a href="https://github.com/Argent77/A7-ImprovedShamanicDance/releases">Improved Shamanic Dance</a> v1.0 or above</li>
+        <li><a href="https://github.com/drake127/randomrolls">Improve randomness of dice rolls</a> v1.01 or above</li>
+        <li><a href="https://github.com/Pocket-Plane-Group/Indira_NPC/releases">Indira NPC for BG1 Tutu</a> v13 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/1091-isandirs-portrait-pack/">Isandir's Portrait Pack</a> v1.3 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/Isra_NPC_BG2/releases">Isra BG2</a> v3 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/Isra_NPC/releases">Isra NPC Mod (BG1)</a> v3.0 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/items/item_rand/">Item Randomiser</a> v7 dated 17020 or above</li>
+        <li><a href="https://github.com/Gibberlings3/ItemRevisions">Item Revisions</a> v4 Beta or above (Caution: makes short bows and axes unuseable for Shamans)</li>
+        <li><a href="https://github.com/Pocket-Plane-Group/Item_Upgrade/releases">Item Upgrade (Weimer's)</a> v45 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/88857/mod-iwdee-ui-bgee">IWDEE-UI-BGEE</a> 1.6 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/spells/iwdification/">IWDification</a> vBeta3 (no changes)</li>
+        <li><a href="http://www.shsforums.net/files/file/539-iylos/">Iylos NPC</a> v2.6 or above</li>
+        <li><a href="https://github.com/AstroBryGuy/JaheiraRecast">Jaheira Recast</a> v2.0 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/801-jans-alchemy/">Jan's Alchemy</a> v8.0.0 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/tweaks/jasteys-sod-tweak-pack/">Jastey's SoD Tweakpack</a> v1.0 or above</li>
+        <li><a href="https://www.gibberlings3.net/forums/topic/32227-bwl-jini-romance-mod-update/?tab=comments#comment-290238">Jini Romance</a> v3.1 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/18607/jkits-v7-kenshei-undead-eliminator-amazon-3-20-18/p1">JKits (Kenshei, Undead Eliminator, Amazon)</a> v7 or above</li>
+        <li><a href="https://www.gibberlings3.net/files/file/731-jps-portrait-collection/">JPS' Portrait Pack</a> v4</li>
+        <li><a href="https://downloads.weaselmods.net/download/the-journey-to-the-whin-hill/">The Journey to the Whin Hill</a> v1.2 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/74630/v1-6-kale-a-halfling-barbarian-for-bg-ee-sod-and-eet/p1">Kale NPC</a> v1.6 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/keldorn/">Keldorn Romance (berelinde's)</a> v1.0 or above</li>
+        <li><a href="https://github.com/Pocket-Plane-Group/Kelsey/releases">Kelsey NPC</a> v5 or above</li>
+        <li><a href="https://www.pocketplane.net/keto-npc/">Keto NPC</a> v5 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/khalid-bg2/">Khalid (BG2) NPC</a> v1.00 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/79293/mod-kit-le-rodeur-de-lombre-shadow-ranger-updated/p1">Kit Le Rôdeur de l'ombre (Shadow Ranger)</a> v1.2 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/kivan/">Kivan and Deheriana Companions for BG2</a> v16</li>
+        <li><a href="https://github.com/SpellholdStudios/KorganFriendship/releases">Korgan Friendship</a> V1.0 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/KorgansRedemption/releases">Korgan's Redemption</a> v10.0.1 or above</li>
+        <li><a href="https://www.gibberlings3.net/forums/topic/30827-ui-lefreuts-enhanced-ui-bgee-sod-bg2ee-and-eet/">Lefreut's enhanced UI (BGEE, SoD, BG2EE and EET)</a> v3.9.1 or above (can be installed even after setup-EET_end)</li>
+        <li><a href="https://www.gibberlings3.net/forums/topic/25048-new-bg2-npc-lena/">Lena, tiefling NPC</a> v0.8 or above</li>
+        <li><a href="https://github.com/LCA-EET/Lichdom/releases">Lichdom</a> v1 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/1080-lighting-pack-shader-scripts-for-the-enhanced-edition/">Lighting Pack: Shader Scripts for the Enhanced Edition</a> v2.3 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/tweaks/lore/">Lore from Learning</a> v1 or above</li>
+        <li><a href="https://github.com/LCA-EET/LCA/releases">Love Conquers All</a> v1 or above</li>
+        <li><a href="https://github.com/LCA-EET/LCA_Explicit/releases">Love Conquers All (Explicit)</a> v1 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/Lucy_the_Wyvern/releases">Lucy the Wyvern</a> v4 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/560-the-luxley-family/">Luxley Family</a> v2.0.0 or above</li>
+        <li><a href="https://github.com/Argent77/A7-MagicStore/releases">Magic Store of Vergadain</a> v1.0 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/MazzyFriendship/releases">Mazzy Friendship</a> v3.2 or above</li>
+        <li><a href="https://github.com/Raduziel/Mercenary-Kit/releases">Mercenary (Fighter Kit)</a> v2.4 or above</li>
+        <li><a href="https://github.com/UnearthedArcana/Might_and_Guile/releases">Might and Guile (a tweak mod and kit pack for warriors and rogues)</a> v2.1 or above</li>
+        <li><a href="https://github.com/Raduziel/MilitiaOfficer-Kit">Militia Officer (Kit for PC or Khalid)</a> v1.3 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/MinscFriendship/releases">Minsc Friendship</a> v1.0 or above</li>
+        <li><a href="https://github.com/D2-mods/Misc-kits/releases">Misc kits: Kensaizerker, Monastery Swordsman, Jesterblade</a> v1.0 or above</li>
+        <li><a href="https://github.com/aquadrizzt/MonasticOrders/releases">Monastic Orders of Faerun</a> v0.42 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/18108/item-mod-more-style-for-mages-ranged-wizards-staffs-circlets-robe-visual-tweaks-now-in-iwd-ee/p1">More Styles for Mages</a> v1.55 or above</li>
+        <li><a href="https://github.com/CrevsDaak/m7multikit">Multiclassed Multikit Builder Mod</a> v0.27.3 or above</li>
+        <li><a href="https://github.com/lzenner/mptweaks/releases/latest">Multiplayer Tweaks</a></li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/murneth/">Mur'Neth NPC mod</a> v12 or above</li>
+        <li><a href="https://github.com/AstroBryGuy/NeeraBanters/releases">Neera Banters (BG:EE)</a> v0.9 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/1022-neera-expansion/">Neera Expansion</a> v1.3.0 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/953-nephele/">Nephele NPC</a> v2.4 or above</li>
+        <li><a href="http://athkatla.cob-bg.pl/download.php?id=1595">New travel system between Baldur's Gate City areas</a> v2.1 or above</li>
+        <li> <a href="https://www.gibberlings3.net/files/file/790-nightmares-npc-beautification/">NiGHTMARE's NPC Beautification</a> v2</li>
+        <li><a href="https://github.com/SpellholdStudios/Ninde_NPC/releases">Ninde NPC</a> v3.0 or above</li>
+        <li><a href="http://www.shsforums.net/topic/61095-nostalgia-pack-putting-the-bg-back-in-bgee/">Nostalgia Pack - Putting the BG back in BG:EE</a> RC1 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/NTotSC/releases/latest">Northern Tales of the Sword Coast (NTotSC)</a> v2.1 or above</li>
+        <li><a href="https://github.com/Pocket-Plane-Group/NPC_Flirt_Packs/releases">NPC Flirt Packs</a> v1.04 or above</li>
+        <li><a href="https://github.com/Argent77/A7-NPCGenerator/releases">NPC Generator</a> v1.0 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/kits/npckit/">NPC Kitpack</a> v5</li>
+        <li><a href="https://www.gibberlings3.net/mods/tweaks/npctweak/">NPC Tweak</a> v6</li>
+        <li><a href="https://github.com/UnearthedArcana/NPC_EE/releases">NPC_EE</a> v2.3 or above</li>
+        <li><a href="https://github.com/thisisulb/NoSoDSound">NPCs keep BG1 sound sets during SoD</a> v1 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/of-heirlooms-and-classes/">Of Heirlooms and Classes</a> v1.3 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/spells/celestials/">P&amp;P Celestials</a> v7 or above (check for compatibility with other mods)</li>
+        <li><a href="https://github.com/ArtemiusI/Pai-Na-NPC-mod-for-BG2-EE/releases">Pai'Na NPC for BG2:EE</a> v1.2 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/1032-paintbg-for-bgee/">PaintBG for BG:EE</a> v2.1</li>
+        <li><a href="https://downloads.weaselmods.net/download/petsy/">Petsy Chattertone NPC</a> (since v4.01)</li>
+        <li><a href="https://github.com/SpellholdStudios/Phaere_NPC_Portraits_for_BG2/releases">Phaere NPC Portraits for BG2</a> v5.0 or above</li>
+        <li><a href="https://github.com/4Luke4/PnP-Potions/releases">PnP Potions</a> v1.2.2 or above</li>
+        <li><a href="https://github.com/D2-mods/Portrait-Gender-Separator-for-IE-games/releases">Portrait Gender Separator</a> v1.0 or above</li>
+        <li><a href="https://github.com/DaftHunk/Portraits-Portraits-Everywhere/">Portraits Portraits Everywhere</a> v1.01 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/items/project_javelin/">Project Javelin</a> - Beta 1</li>
+        <li><a href="https://www.gibberlings3.net/forums/topic/36598-protagonist-be-gone-for-bg2-bgt-tutu-bgee-bg2ee-and-eet/">Protagonist-Be-Gone!</a> v1.0 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/quayle-bg2/">Quayle BG2</a> v6.2 or above</li>
+        <li><a href="https://www.pocketplane.net/quest-pack/">Quest Pack</a> v3.3</li>
+        <li><a href="https://github.com/GraionDilach/RandomGraionMagic">Random Graion Magic</a></li>
+        <li><a href="https://github.com/GraionDilach/RandomGraionTweaks">Random Graion Tweaks</a></li>
+        <li><a href="https://forums.beamdog.com/discussion/71473/megamod-2-86-mazzy-romance-clara-npc-darkside-anomen-flying-aerie-for-the-evil-more/p1">Ratatoskr and BCaesar's Multi-Mod: All Things Mazzy, Clara (Human Hexxat) NPC, Darkside Anomen, and more</a> v1.038 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/1079-recolored-toolbar-buttons-for-bgee-bg2ee/">Recolored toolbar buttons for BG:EE &amp; BG2:EE</a> v4.1 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/77784/v1-37-recorder-a-gnome-lorekeeper-npc-for-bg-ee-sod-and-eet/p1">Recorder NPC</a> v1.37 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/Red_Dragon_Summoning_Spell">Red Dragon Summoning</a> v2.0.0 or above</li>
+        <li><a href="https://github.com/UnearthedArcana/refinements/releases">Refinements</a> v4 RC8 or above (only HLA and kit components have been updated to work with EE platforms)</li>
+        <li><a href="https://github.com/SpellholdStudios/Region_of_Terror/releases/latest">Region of Terror</a> v3.1 or above</li>
+        <li><a href="https://github.com/Raduziel/Relieve-Wizard-Slayer/releases">Relieve Wizard Slayer</a> (must be installed after Wizard Slayer Rebalancing)</li>
+        <li><a href="https://github.com/Pocket-Plane-Group/Reunion/releases">Reunion</a> v4 or above</li>
+        <li><a href="https://github.com/Argent77/A7-HiddenGameplayOptions/releases">Reveal Hidden Gameplay Options</a> v1.0 or above</li>
+        <li><a href="https://www.gibberlings3.net/forums/topic/32437-bwl-rjali-npc-mod-update/?tab=comments#comment-292271">Rjali NPC Mod</a> v12 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/other/road_to_discovery/">Road to Discovery (SoD Mod)</a></li>
+        <li><a href="http://www.shsforums.net/files/file/320-rogue-rebalancing-windows-version/">Rogue Rebalancing</a> v4.91 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/Rolles/releases">Rolles Safyer</a> v5.0.2 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/romantic-encounters/">Romantic Encounters for BGII</a> v12 or above</li>
+        <li><a href="https://www.gibberlings3.net/files/file/1029-roorenarts-portrait-pack/">RoorenArt's Portrait Pack</a> v1</li>
+        <li><a href="http://www.shsforums.net/files/file/790-ruad-rofhessa-item-upgrade/">Ruad Ro'fhessa Item Upgrade Mod</a> v29.0.0 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/Rupert_the_Dye_Merchant/releases">Rupert the Dye Merchant</a> current version</li>
+        <li><a href="https://baldursextendedworld.com/Sandrah/">Sandrah Saga</a> v2.04 or above. The Saga is composed of three parts: <a href="https://github.com/RoxanneSHS/SandrahEET/archive/master.zip?dl=1">Sandrah Appears</a>, <a href="https://github.com/RoxanneSHS/SandrahRtF/archive/master.zip?dl=1">Sandrah Return to Faerun</a>, and <a href="https://github.com/RoxanneSHS/SandrahToT/archive/master.zip?dl=1">Sandrah Time of Troubles Revisited</a>.) Please note: do not download mods from that site blindly, as there are inofficial versions. Use the links in this list to download the original mods.</li>
+        <li><a href="http://www.shsforums.net/files/file/1139-saradas-magic-for-bg2/">Saradas Magic II</a> v1.8 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/sarah/">Sarah NPC</a> v5</li>
+        <li><a href="https://github.com/SpellholdStudios/SarevokFriendship/releases">Sarevok Friendship</a> v2.3</li>
+        <li><a href="http://www.shsforums.net/files/file/1110-sarevok-related-tweaks/">Sarevok related tweaks</a> v1.2 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/810-sarevok-romance/">Sarevok Romance</a> v1.3</li>
+        <li><a href="https://github.com/UnearthedArcana/Scales_of_Balance/releases">Scales of Balance</a> v5.1 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/shades-of-the-sword-coast/">Shades of the Sword Coast</a> v6 or above</li>
+        <li><a href="https://github.com/ArtemiusI/Shadow-Magic/">Shadow Magic</a> v1.85 or later</li>
+        <li><a href="https://github.com/SpellholdStudios/Shadows_over_Soubar/releases">Shadows Over Soubar</a> v1.14 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/87794/mod-sharpening-filter-bgee1-3-like-look-and-more-via-shaders/p1">Sharpening filter, BGEE1.3-like look and more via shaders</a></li>
+        <li><a href="https://www.gibberlings3.net/mods/other/shards/">Shards Of Ice</a> v6</li>
+        <li><a href="https://www.gibberlings3.net/forums/topic/32637-lcc-the-shuri-ninja-kit-mod-updated-to-v200/?tab=comments#comment-294145">Shuri Ninja Kit</a> v2.0.0 or above</li>
+        <li><a href="https://www.baldurs-gate.de/index.php?resources/jasteys-sir-ajantis-f%C3%BCr-bgii-npc.9/">Sir Ajantis BG2</a> v15.5 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/62163/npc-mod-sirene-npc-for-bg2-ee-v1-3-eet-compatibility-added/p1">Sirene NPC for BG2:EE</a> v1.3 or later (should have full continuity if BG:EE version is present)</li>
+        <li><a href="https://downloads.weaselmods.net/download/skie-the-cost-of-one-girls-soul/">Skie - The Cost of One Girl's Soul</a> v1.2 or above (The mod may not be compatible (story-wise) with other mods that add Soultaker and/or Skie plots to Baldur's Gate II)</li>
+        <li><a href="https://github.com/Gibberlings3/Skills-and-Abilities/releases">Skills and Abilities</a> v0.4-alpha or above</li>
+        <li><a href="http://www.shsforums.net/files/file/1150-skip-chateau-irenicus/">Skip Chateau Irenicus</a> v1.0 or above</li>
+        <li><a href="https://github.com/Austin-BG/SmilingImpCrossBanterMod/releases">Smiling Imp's Cross Banter Mod</a> v1.2 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/items/sod-to-bg2ee-item-upgrade/">SoD to Baldur's Gate 2: Enhanced Edition Item Upgrade</a> v2.0.0 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/Solaufein_Flirt_Pack/releases">Solaufein Flirt Pack for the Solaufein Romance Modification</a> v1.2 or above</li>
+        <li><a href="https://www.baldurs-gate.de/index.php?resources/jasteys-solaufein-npc-mod-for-bgii-solaufeins-rescue.13/">Solaufein's Rescue (Jastey's Solaufein)</a> v1 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/kits/sns/">Song and Silence</a> v8 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/kits/spc/">SP Collection</a> v11</li>
+        <li><a href="https://github.com/Gibberlings3/SpellRevisions">Spell Revisions</a> vBeta or above</li>
+        <li><a href="https://github.com/thisisulb/SpiritHunterShamanKit">Spirit Hunter - a Shaman Kit</a> v0.3 or above</li>
+        <li><a href="https://github.com/thisisulb/SpiritwalkerKit">Spirit Walker - a Shaman Kit</a> v1.3 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/29604/mod-spontaneous-casting-for-clerics-and-druids-v1-32/p1">Spontaneous Casting For Clerics and Druids</a> v1.3 or above</li>
+        <li><a href="https://github.com/thisisulb/StormCallerKit">Storm Caller - a Shaman Kit</a> v3.0 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/StuffofTheMagi">Stuff of the Magi</a> v6.0.0 or above</li>
+        <li><a href="https://www.gibberlings3.net/forums/topic/31133-subtledocs-random-tweaks/">Subtledoc's Random Tweaks</a> v1 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/Super_Firkraag/releases">Super Firkraag</a> v1.6 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/kits/swordandfist/">Sword and Fist</a> v11 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/tweaks/scs/">Sword Coast Stratagems</a> v32 RC5 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/tweaks/tof/">Talents of Faerûn</a> - Beta 1 (must be installed after setup-EET_end)</li>
+        <li><a href="https://github.com/Argent77/A7-TestYourMettle/releases">Test Your Mettle!</a> v0.1-beta or above</li>
+        <li><a href="https://github.com/CrevsDaak/thalan">Thalantyr - Item Upgrade</a> v4.2.1 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/75663/kit-mod-the-artisans-kitpack/p1">The Artisan's Kitpack</a> v1.7 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/beaurin/">The Beaurin Legacy</a> v3.6 or above</li>
+        <li><a href="https://github.com/D2-mods/D2-Mira/releases">The Big Metal Unit mod</a> v1.0 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/quests/tbbs/">The Boareskyr Bridge Scene (SoD Mod)</a></li>
+        <li><a href="https://www.gibberlings3.net/mods/quests/thecalling/">The Calling</a></li>
+        <li><a href="https://www.gibberlings3.net/mods/quests/the-cowled-menace/">The Cowled Menace</a> v0.2.1 Beta or above</li>
+        <li><a href="https://github.com/InfinityMods/TDDz">The Darkest Day EE edition (TDDz)</a> v1.0 or above (please refer to the TDDz readme - this mod needs external resources from <a href="http://www.shsforums.net/files/file/323-the-darkest-day-v114/">original TDD</a>)</li>
+        <li> <a href="https://www.gibberlings3.net/mods/quests/g3a/">The Gibberlings Three Anniversary Mod</a> v10</li>
+        <li><a href="https://github.com/TotalMilk90/gorgon/releases">The Gorgon's Eye</a> (Thieves Guild in Beregost) v3.0 or above</li>
+        <li><a href="https://github.com/K4thos/TGC1e">The Grey Clan Episode I: In Candlelight</a> v1.9 beta or above</li>
+        <li><a href="http://www.shsforums.net/files/file/1159-the-horde-beta/">The Horde</a> v1.2 beta or above</li>
+        <li><a href="http://www.shsforums.net/files/file/38-jerry-zinger-show/">The Jerry Zinger Show</a> v5.0 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/39-longer-road/">The Longer Road</a> v2.0.1 or above</li>
+        <li><a href="https://www.pocketplane.net/bg1tutu-enhancements/">The Lure of the Sirine's Call</a> v15 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/The_Minotaur_and_Lilacor/releases">The Minotaur and Lilacor</a> v1.6</li>
+        <li><a href="https://github.com/Pocket-Plane-Group/Sellswords/releases">The Sellswords</a> v7 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/151-the-slithering-menace-tob/">The Slithering Menace</a> v4.0.0 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/TheSwordofNoober/releases">The Sword of Noober</a> v2.0.1 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/The_Unusual_Oddities_Shop/releases">The Unusual Oddities Shop</a> v5.0 or above</li>
+        <li><a href="https://github.com/D2-mods/The-Workshop-Kitpack/releases">The Workshop Kitpack</a> v1.0 or above</li>
+        <li><a href="https://github.com/lzenner/themed_tweaks/releases/latest">Themed Tweaks</a></li>
+        <li><a href="https://github.com/Gibberlings3/Thieving-Skills-For-Bards/releases/latest">Thieving Skills for Bards</a></li>
+        <li><a href="https://github.com/Sampsca/ThrownHammers/releases">ThrownHammers</a> v6.0.1 or above</li>
+        <li><a href="https://github.com/Pocket-Plane-Group/Tiax_for_BGII/releases">Tiax NPC for BGII</a> v5 or above</li>
+        <li><a href="https://www.gibberlings3.net/forums/topic/30797-unearthed-arcana-present-tome-blood-more-options-for-arcane-casters/">Tome and Blood</a> v0.72 or above</li>
+        <li><a href="https://github.com/InfinityMods/TowerOfDeception/releases">Tower of Deception</a> v4.0.1 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/quests/transitions/">Transitions</a></li>
+        <li><a href="http://www.shsforums.net/files/file/1251-trials-of-the-luremaster-for-bg2ee/">Trials of the Luremaster</a> v1.0 or above</li>
+        <li><a href="https://www.pocketplane.net/turnabout/">Turnabout</a> vUpdatedForEE</li>
+        <li><a href="https://www.gibberlings3.net/mods/tweaks/tweaks/">Tweaks Anthology</a> v1 or later (previously known as BG2 Tweak Pack)</li>
+        <li><a href="https://www.gibberlings3.net/mods/npcs/tyris/">Tyris Flare</a> v8</li>
+        <li><a href="https://github.com/Pocket-Plane-Group/Under-Respresented_Items/releases">Under-Represented Items</a> v7 or above</li>
+        <li><a href="https://github.com/Pocket-Plane-Group/UnfinishedBusiness/releases">Unfinished Business</a> v27 RC1 or above</li>
+        <li><a href="https://github.com/Raduziel/Raduziels-Universal-Wizard-Spells/releases">Universal Wizard Spells</a> v2.5 or later</li>
+        <li><a href="https://forums.beamdog.com/discussion/56567/mod-bgii-ee-unofficial-item-pack/p1">Unofficial Item Pack</a> v2.7b CAUTION: do not install &quot;SoD items import&quot; component in EET to avoid duplication!</li>
+        <li><a href="http://www.shsforums.net/files/file/1041-valerie/">Valerie NPC for Baldur's Gate I</a> v1.2 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/ValygarFriendship/releases">Valygar Friendship</a> v1.0</li>
+        <li><a href="http://www.shsforums.net/files/file/1195-vampire-world-for-eet/">Vampire World</a> v0.42 or above CAUTION mod is still experimental according to author</li>
+        <li><a href="https://downloads.weaselmods.net/download/the-vanishing-of-skie-silvershield/">The Vanishing of Skie Silvershield</a> v2.2 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/varshoon/">Varshoon NPC</a> (since v6.0)</li>
+        <li><a href="https://github.com/SpellholdStudios/ViconiaFriendship/releases">Viconia Friendship</a> v4.3</li>
+        <li><a href="http://www.shsforums.net/files/file/882-viconia-revamped/">Viconia Revamped</a> v6.0</li>
+        <li><a href="https://forums.beamdog.com/discussion/74701/v1-57-vienxay-a-elven-shadowmage-npc-for-bg-ee-sod-and-eet/p1">Vienxay NPC</a> v1.57 or above</li>
+        <li><a href="https://github.com/ColossusChang/VoicesVoicesExtravaganza/releases">Voices Voices Extravaganza - Baldur's Gate (can be installed before or after EET_End)</a> v1.0 or above</li>
+        <li><a href="https://github.com/ColossusChang/VoicesVoicesExtravaganza-SOD/releases">Voices Voices Extravaganza - Baldur's Gate: Siege of Dragonspear (can be installed before or after EET_End)</a> v1.0 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/walahnan-bg1ee/">Walahnan (BG1EE) NPC</a> v2.0 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/walahnan-bg2ee/">Walahnan (BG2EE) NPC</a> v1.0 or above</li>
+        <li><a href="https://www.gibberlings3.net/forums/topic/38054-wares-of-the-planes-planescape-items-for-baldurs-gate/">Wares of the Planes</a> v1.0 or above</li>
+        <li><a href="https://forums.beamdog.com/discussion/69177/v0-1-warlock-mod/p1">Warlock kit</a></li>
+        <li><a href="https://downloads.weaselmods.net/download/weasels/">Weasels!</a> v1.2 or above</li>
+        <li><a href="https://www.gibberlings3.net/mods/quests/wheels/">Wheels of Prophecy</a> v6 or above</li>
+        <li><a href="https://github.com/BGforgeNet/bg2-wildmage">Wild Mage Additions</a> v2.3 beta or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/will-of-the-wisps/">Will of the Wisps</a> v1.2 or above</li>
+        <li><a href="https://github.com/UnearthedArcana/Will_to_Power/releases">Will to Power</a> v1.0 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/wilson-chronicles/">Wilson Chronicles</a> v1.8.1 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/960-wizard-slayer-rebalancing-v113-windows-version/">Wizard Slayer Rebalancing</a> v1.14 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/BP-BGT-Worldmap/releases">Worldmap</a> v10.2.3 or above</li>
+        <li><a href="https://github.com/Pocket-Plane-Group/Xan_for_BGII/releases">Xan for BG2</a> v17 or above</li>
+        <li><a href="https://www.pocketplane.net/bg1tutu-enhancements/">Xan's BG1 friendship path</a> v10 or above</li>
+        <li><a href="http://www.shsforums.net/files/file/710-xulaye/">Xulaye NPC</a> v2.0 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/Yeslick_NPC/releases">Yeslick SoA/ToB</a> v2.0 or above</li>
+        <li><a href="https://github.com/SpellholdStudios/YoshimoFriendship/releases">Yoshimo Friendship</a> v4.3 or above</li>
+        <li><a href="https://downloads.weaselmods.net/download/yoshimo-romance/">Yoshimo Romance</a> v4.0 or above</li>
+        <li><a href="http://www.baldursgatemods.com/forums/index.php?topic=7697.0">Zelink (Zelda &amp; Link) mod for Baldur's Gate 2 SoA</a> v1.0 or above</li>
+      </ul>
+    </div>
+  </div>
 </div>
-
-<!-- ================== T a b l e ================== --><div><a id="table"></a></div>
-<h2>Table of Contents</h2>
-<div class="section">
-	<ol>
-		<li><a href="#bgee">Mods installed on BG:EE previous to installing EET on BG2:EE</a></li>
-		<li><a href="#native">Mods installed after EET main component on BG2:EE</a></li>
-	</ol>
-</div>
-
-<!-- ================== BGEE ================== --><div><a id="bgee"></a></div>
-<h2>Mods installed on BG:EE previous to installing EET on BG2:EE</h2>
-<div class="section">
-
-<p>As a result of the conversion method explained in the readme, EET provides limited support for mods installed on BG:EE previous to installing EET on BG2:EE. Theoretically it could support almost any BG:EE mod with little to no work needed (for example adjusting BG1NPC Project to work with this method required just a few lines of code. Many mods don't need anything changed at all) as the mod resources are treated like vanilla content and patched "on the fly" during EET installation if needed. To ensure that BG:EE mods not intervene with BG2:EE portion of the game EET prevents starting the installation when unrecognised mod is detected.</p>
-
-<p>This section can be treated as a temporary solution. Hopefully more and more mods will receive updates to support EET natively down the line, so they could be installed after EET on BG2:EE.</p>
-
-<p>Here is a list of supported mods installed on BG:EE</p>
-<ul>
-	<li><a href="https://forums.beamdog.com/discussion/38824/aerie-in-bg-ee-v1-1/p1">Aerie for BG:EE</a> v1.1 until v2.0</li>
-	<li><a href="https://github.com/Pocket-Plane-Group/bg1ub/releases">BG1 Unfinished Business</a> v14 [BETA] or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/18833/bg-ee-dark-horizons-released/p1">Dark Horizons BG:EE</a> v2.12 or above</li>
-	<li><a href="https://github.com/ArtemiusI/Drake/releases">Drake NPC</a> v0.1 BETA</li>
-	<li><a href="https://forums.beamdog.com/discussion/29969/drizzt-saga-v3-released-now-bgee-compatible/p1">Drizzt Saga</a> v3 or above (select default option during installation - despite the name it's compatible with both EET Worldmap and BP-BGT Worldmap)</li>
-	<li><a href="http://mirandir.baldursgateworld.fr/garrick-tt/">Garrick: Tales of a troubadour</a> v1.24 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/15867/mod-npc-margarita-zelleod/p1">Margarita NPC</a> v1.0 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/59889/rough-world-beta/p1">Rough World</a> vBeta or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/23861/bg-ee-mod-saradas-magic-released/p1">Saradas Magic</a> v1.1 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/1164-sharteel-npc-mod-for-sod/">Sharteel NPC mod for SoD</a> Pre-Release 1.1 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/42721/npc-mod-sirene-npc-for-bg-ee-v1-0/p1">Sirene NPC</a> v1.0 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/33291/tenya-thermidor-v1-3/p1">Tenya Thermidor</a> v1.5 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/42168/mod-the-stone-of-askavar-for-totsc-tutu-bgt-and-bg-ee/p1">The Stone of Askavar</a> v1.9 or above (select default option during installation - despite the name it's compatible with both EET Worldmap and BP-BGT Worldmap)</li>
-	<li><a href="https://forums.beamdog.com/discussion/15959/mod-twas-a-slow-boat-from-kara-tur-queststorenew-items-release-90/p1">T'was a Slow Boat from Kara-Tur</a> v.90 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/verrsza-bg1ee/">Verr'Sza NPC</a> v2.4 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/white-npc/">White NPC</a> v2.2 or above</li>
-</ul>
-
-<p>Compatibility with EET doesn't mean that mods are fully compatible with each other - refer to BWP PDF files, original readme files and forum discussions for compatibility details. For example Garrick : tales of a troubadour readme file states that it conflicts with Garrick's Infatuation and Tenya NPC and it is not recommended to install them together. Same readme file also mentions that the mod requires BG1 NPC Project installed before it.</p>
-
-<p>Mods have been tested with versions mentioned in above list. It's unlikely that newer ones will break something, as the compatibility changes made to them during EET installation are minimal, if made at all. As long as the mod won't suddenly conflict with BG2:EE resources it should be still supported regardless of the chnges done to it. Although let us know if you notice any problems.</p>
-</div>
-
-<!-- ================== NATIVE ================== --><div><a id="native"></a></div>
-<h2>Mods installed after EET main component on BG2:EE</h2>
-<div class="section">
-
-<p>This list, sorted in alphabetical order, contains BG2:EE and BG:EE mods that have native EET support or don't need anything changed to work natively. Some of them are only available as a beta for now (older versions didn't have EET support), so keep that in mind.</p>
-<ul>
-	<li><a href="http://www.shsforums.net/files/download/1205-35-edition-weapon-style-rebalance/">3.5e Weapon Style Rebalance</a></li>
-	<li><a href="https://github.com/UnearthedArcana/5E_spellcasting/releases">5E-Style Spellcasting</a> v1.1 or above</li>
-	<li><a href="http://www.shsforums.net/topic/61094-acs-miscellaneous-tweaks/">AC's Miscellaneous Tweaks</a> RC1 or above</li>
-	<li><a href="https://www.gibberlings3.net/files/file/1007-aces-enchanters-portrait-pack/">Ace's Enchanters Portrait Pack</a></li>
-	<li><a href="https://github.com/Argent77/A7-Achievements/releases">Achievements!</a> v1.0 or above</li>
-	<li><a href="https://www.baldurs-gate.de/index.php?resources/adalons-blood-silberdrachenblutmod.5/">Adalon's Blood</a> v1.4 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/Adrian_NPC/releases">Adrian NPC</a> V4.0 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/139-adventures-in-papperland/">Adventures in Papperland</a> v6.0 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/38824/aerie-in-bg-ee-v1-1/p2">Aerie for BG:EE</a> v2.0 or above (The-Gate-Project updates)</li>
-	<li><a href="https://github.com/Argent77/DjinniCompanion/releases">Afaaq, the Djinni Companion</a> v2.2 or above</li>
-	<li><a href="https://www.baldurs-gate.de/index.php?resources/jasteys-ajantis-bg1-expansion.2/">Ajantis BG1 Expansion</a> v10 or above</li>
-	<li><a href="http://www.shsforums.net/topic/59054-ajocmod-for-ee-and-eet/">Ajoc's minimod for EE and EET</a> v1.0 or above (this update requires resources from <a href="http://www.shsforums.net/files/file/119-ajocs-minimod/">original ajocmod</a>)</li>
-	<li><a href="http://www.shsforums.net/files/file/1053-almaterias-restoration-project/">Almateria's Restoration Project</a> v8.2.7 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/quests/alternatives/">Alternatives</a> v12 or above</li>
-	<li><a href="https://www.gibberlings3.net/files/file/684-amaureas-bg-portraits/">Amaurea's BG Portraits</a></li>
-	<li><a href="https://www.gibberlings3.net/files/file/683-amaureas-bg2-portraits/">Amaurea's BG2 Portraits</a></li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/amber/">Amber</a> v5 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/angelo/">Angelo NPC</a> v6</li>
-	<li><a href="https://github.com/thisisulb/AnimalCompanions">Animal Companions</a> v1.3 or above</li>
-	<li><a href="https://www.gibberlings3.net/files/file/687-anishai-one-day-npc/">Anishai One Day NPC</a> v2 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/quests/g3a/">Anniversary (G3 mini mod)</a> v9.1</li>
-	<li><a href="https://www.gibberlings3.net/mods/quests/anotherfinehell/">Another fine Hell (SoD Mod)</a></li>
-	<li><a href="http://www.shsforums.net/files/file/1001-arath/">Arath</a> v4 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/51904/mod-artaport-4-0/p1">Artaport</a> (EE native version of <a href="http://www.shsforums.net/files/file/1033-paintbg/"> PaintBG)</a> v2 or above</li>
-	<li><a href="https://github.com/Gitjas/Ascalons_Breagar/releases/latest">Ascalon's Breagar</a> v7.0 or above</li>
-	<li><a href="https://github.com/Gitjas/Ascalons_Questpack/releases">Ascalon's Questpack</a> v2.02 or above</li>
-	<li><a href="https://github.com/InfinityMods/Ascension">Ascension</a> v1.5 BETA or above</li>
-	<li><a href="https://github.com/Pocket-Plane-Group/Assassinations/releases">Assassinations</a> v13 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/alabaster-sands/">Athkatlan Grounds: Alabaster Sands</a> v1.2 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/bridges-block/">Athkatlan Grounds: Bridge's Block</a> v1.0 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/oozes-lounge/">Athkatlan Grounds: Ooze's Lounge</a> v2.3 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/southern-edge/">Athkatlan Grounds: Southern Edge</a> v1.0 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/tangled-oak-isle/">Athkatlan Grounds: Tangled Oak Isle</a> (since v0.91)</li>
-	<li><a href="http://www.shsforums.net/topic/38261-atweaks-v451-released/">aTweaks</a> v4.50 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/65891/v3-2-aura-a-gnome-artificer-npc-for-bg-ee-sod/p1">Aura NPC</a> v3.2 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/auren/">Auren Aseph NPC</a> v10</li>
-	<li><a href="https://github.com/LCA-EET/AutoLoot/releases">AutoLoot</a> v1 or above</li>
-	<li><a href="https://github.com/Pocket-Plane-Group/Back_to_Brynnlaw/releases">Back to Brynnlaw</a> v7 or above</li>
-	<li><a href="https://www.gibberlings3.net/forums/topic/27768-baldurs-gate-graphics-overhaul-for-eet/">Baldur's Gate Graphics Overhaul for EET</a> v beta 2.0 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/quests/bgqe/">Baldur's Gate Mini Quests and Encounters</a> v15 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/bg-romantic-encounters/">Baldur's Gate Romantic Encounters Modification</a> v2.0 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/quests/baldurans-seatower/">Balduran's Seatower</a> vEAOB or above</li>
-	<li><a href="http://www.shsforums.net/files/file/1216-bank-of-baldurs-gate-for-eet/">Bank of Baldur's Gate</a></li>
-	<li><a href="https://github.com/Argent77/A7-BanterAccelerator/releases">Banter Accelerator for Enhanced Edition games</a> v1.0 or later</li>
-	<li><a href="https://github.com/Pocket-Plane-Group/Banter_Pack/releases">Banter Packs</a> v15 or above</li>
-	<li><a href="https://github.com/ArtemiusI/Bardic-Wonders">Bardic-Wonders</a></li>
-	<li><a href="https://www.gibberlings3.net/mods/tweaks/appraisal/">Bardic Appraisal</a></li>
-	<li><a href="https://github.com/thisisulb/BearWalkerKit">Bear Walker - a Werebear / Ranger Kit</a> v3.0 or above</li>
-	<li><a href="https://github.com/D2-mods/Better-IWD-Pregen/releases">Better IWD Pregen - a minimalist script and tweak pack</a> v0.6 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/bg1npc/">BG1 NPC Project</a> v24.2 and above</li>
-	<li><a href="https://www.gibberlings3.net/files/file/692-bg1-npc-project-music-pack/">BG1 NPC Project Music Pack</a> v6 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/82463/mod-bg1-npcs-for-soa-tob">BG1 NPCs for SoA &amp; ToB</a> v10 or above</li>
-	<li><a href="http://www.shsforums.net/topic/55573-bg-ee-classic-movies/">BG:EE Classic Movies</a> v2.3.0 or above (install after EEUITweaks User Interface Mods Collection)</li>
-	<li><a href="https://github.com/GraionDilach/BGEESpawn">BGEE Leveled Spawns Mod</a> v0.4 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/58941/mod-bgeenpc-tweaks-for-bgee-sod-bg2ee-eet/p1">BGEENPC Tweaks for BGEE / SOD / BG2EE / EET</a> v1.0 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/82484/released-black-hearts-bg1/p1">Black Hearts</a> with dedicated EET variant</li>
-	<li><a href="http://www.shsforums.net/files/file/772-bolsa/">Bolsa Merchant</a> v6.0.0 or above</li>
-	<li><a href="https://www.baldurs-gate.de/index.php?resources/brages-redemption.42/">Brage's Redemption Mod</a> v0.1 or above</li>
-	<li><a href="https://baldurs-gate.de/index.php?resources/brandock-der-magier.48/">Brandock the Mage NPC Mod</a> vBeta1 or above</li>
-	<li><a href="https://github.com/Pocket-Plane-Group/Branwen_for_BGII/releases">Branwen for BG2</a> v4 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/bristlelick/">Bristlelick NPC</a> v2.2 or above</li>
-	<li><a href="https://www.gibberlings3.net/forums/topic/35838-ui-bubbs-spell-menu-v45/">Bubb's Spell Menu Extended</a> v2.2 or above (must be installed after setup-EET_gui, can be installed even after setup-EET_end)</li>
-	<li><a href="https://github.com/GwendolyneFreddy/butchery">BuTcHeRy</a> v4.0 or above</li>
-	<li><a href="https://www.gibberlings3.net/files/file/1010-calin/">Calin Romance Mod</a> v1.0 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/spells/celestials/">Celestials (P&amp;P)</a> v7 or above (check for compatibility with other mods)</li>
-	<li><a href="https://github.com/SpellholdStudios/CerndFriendship/releases">Cernd Friendship</a> v1.0 or above</li>
-	<li><a href="https://github.com/Argent77/A7-ChaosSorcerer/releases">Chaos Sorcerer Kit</a> v1.0 or above</li>
-	<li><a href="https://github.com/Raduziel/Charlatan-Kit/releases">Charlatan (Bard Kit for PC or Eldoth)</a> v2.0 or above</li>
-	<li><a href="https://github.com/AstroBryGuy/ChattyImoen">Chatty Imoen</a> v1.3 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/Check_the_Bodies/releases/latest">Check the Bodies</a> v2.2 or above (versions before v3.0 require BP-BGT Worldmap)</li>
-	<li><a href="https://downloads.weaselmods.net/download/foundling-between-the-shades/">Colours of Infinity: Foundling</a> v3 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/i-shall-never-forget/">Colours of Infinity: I Shall Never Forget</a> v5.2 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/innershade/">Colours of Infinity: Innershade</a> v9.0 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/tales-of-the-deep-gardens/">Colours of Infinity: Tales of the Deep Gardens</a> v12 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/the-white-queen/">Colours of Infinity: The White Queen</a> v6.0 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/yvette-romance/">Colours of Infinity: Yvette Romance</a> v4.0 or above</li>
-	<li><a href="https://www.gibberlings3.net/files/file/1002-continuous-npc-portraits/">Continuous NPC Portraits</a> v1 or above</li>
-	<li><a href="https://github.com/Argent77/A7-NoEENPCs/releases">Convenient Enhanced Edition NPCs</a> v4 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/coran/">Coran's BG Extended Friendship Talks</a> v5 or above</li>
-	<li><a href="https://github.com/Pocket-Plane-Group/Coran_for_BGII/releases">Coran for BG2</a> v6 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/corthala/">Corthala Romantique</a> v1 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/crossmod/">Crossmod Banter Pack for Baldur's Gate II</a> v16</li>
-	<li><a href="http://www.shsforums.net/files/file/913-custom-kits-the-spellsword/">Custom Kits: The Spellsword</a> v1.4.1 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/614-ds-odd-quest-mod/">D's Odd Quest Mod</a> v2.0 or above</li>
-	<li><a href="https://github.com/D2-mods/D2-Weapon/releases">D2-Weapon - A Souls-inspired Weapon Pack</a> v1.0 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/1038-dace/">Dace</a> v3 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/DSotSC/releases">Dark Side of the Sword Coast (DSotSC) BGT/EET edition</a> vBETA or above (this is NOT version released for BG:EE)</li>
-	<li><a href="http://www.shsforums.net/files/file/842-darron/">Darron the BG2 Thief Guild Vendor</a> v2.0.0 or above</li>
-	<li><a href="https://github.com/Pocket-Plane-Group/deArnise_Romance/releases">de'Arnise Romance</a> v6 or above</li>
-	<li><a href="https://www.gibberlings3.net/forums/topic/30780-kit-pack-deities-of-faer%C3%BBn-bgee-bg2ee-iwdee-and-eet/">Deities Of Faerun (Cleric Kits)</a> v1.8.4 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/140-demon-summoning-ritual/">Demon Summoning Ritual</a> v8.0.0 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/kits/cleric/">Divine Remix</a> for now, please use <a href="https://github.com/Gibberlings3/Divine_Remix/archive/master.zip">latest Github version</a></li>
-	<li><a href="https://github.com/trinit2/Bg2Dorn/">Dorn Romance (SoA+ToB)</a>v3.2 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/50357/mod-dragonspear-ui-v2-42-now-compatible-with-bg2-ee">Dragonspear UI++</a></li>
-	<li><a href="https://downloads.weaselmods.net/download/in-love-undeath/">The Dreadful Tales: In Love, Undeath</a> v1.2 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/juniper-and-the-stone-leech/">The Dreadful Tales: Juniper and the Stone Leech</a> v1.2 or above</li>
-	<li><a href="https://github.com/thisisulb/DreamWalkerShamanKit">Dream Walker - a Shaman Kit</a> v1.2 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/62981/mod-druid-grove-makeover/p1">Druid Grove Makeover</a> v1 or above</li>
-	<li><a href="https://github.com/Pocket-Plane-Group/Dungeon_Crawl/releases">Dungeon Crawl</a> v11 or above</li>
-	<li><a href="https://www.pocketplane.net/dungeon-be-gone/">Dungeon-Be-Gone</a> v1.7</li>
-	<li><a href="https://downloads.weaselmods.net/download/dvaradime/">Dvaradime NPC</a> v1.3 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/Edwin_Romance/releases/latest">Edwin Romance</a> v2.08 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/71798/mod-eeex-v0-9-7-alpha">EEex</a> v0.2.0-alpha or above (can be installed even after setup-EET_end)</li>
-	<li><a href="https://github.com/K4thos/EET_Tweaks/releases/latest">EET Tweaks</a> v1.0 or above</li>
-	<li><a href="https://www.gibberlings3.net/forums/topic/30832-ui-eeuitweaks-mod-collection-all-ees/">EEUITweaks User Interface Mods Collection</a> v1.5 or above (can be installed even after setup-EET_end)</li>
-	<li><a href="https://downloads.weaselmods.net/download/eilistraees-song/">Eilistraee's Song</a> v6.0 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/74672/v1-59-emily-a-half-elf-archer-for-bg-ee-sod-and-eet/p1">Emily NPC</a> v1.59 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/tweaks/enemy_randomizer/">Enemy Randomizer</a> v1 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/other/endlessbg1/">Endless BG1</a> v1 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/other/enhanced-powergaming-scripts/">Enhanced Powergaming Scripts</a> v1.0 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/74158/mod-epic-thieving-more-benefits-from-high-thieving-skills/p1">Epic Thieving</a> v2.6 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/evandra/">Evandra</a> v1.0 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/quests/cliffette/">Every Mod and Dog (Mini-quests)</a> v8</li>
-	<li><a href="https://github.com/SpellholdStudios/Expanded_Thief_Stronghold/releases/latest">Expanded Thief Stronghold</a> v3.0.0 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/73749/extra-expanded-enhanced-encounters-module-download/p1">Extra Expanded Enhanced Encounters!</a> v2.0 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/1083-fade/">Fade</a> v5.1 (experimental) or above</li>
-	<li><a href="https://github.com/SpellholdStudios/Fading_Promises/releases">Fading Promises</a> v8 or above</li>
-	<li><a href="https://github.com/UnearthedArcana/Faiths_and_Powers/releases">Faiths and Powers (kitpack and divine caster/spell tweaks)</a> v0.74g or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/faldorn-bg2ee/">Faldorn (BG2EE) NPC mod</a> v1.3 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/fhaugy/">Fhaugy NPC mod</a> v1.00 or above</li>
-	<li><a href="https://github.com/Pocket-Plane-Group/Finch_NPC/releases">Finch NPC mod</a> v5 or above</li>
-	<li><a href="https://github.com/InfinityMods/FishingForTrouble">Fishing For Trouble</a> v3.1 pre-release or above</li>
-	<li><a href="https://github.com/Gibberlings3/Forgotten-Armament/releases">Forgotten Armament</a> v0.4-beta or above</li>
-	<li><a href="https://github.com/Gibberlings3/framed/releases">Framed</a> alternative chapter 6</li>
-	<li><a href="https://downloads.weaselmods.net/download/gahesh/">Gahesh NPC</a> v2.1 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/garrick/">Garrick's Infatuation</a> vBeta 4 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/gavin/">Gavin BG1 NPC</a> v12 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/gavin-bg2/">Gavin BG2 NPC</a> v22 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/glam-npc-pack/">Glam's BGEE NPC Pack (Littlun Plunkett, Vynd, Moidre, Dave, Flara)</a> v1 or above</li>
-	<li><a href="http://www.shsforums.net/topic/58696-mod-golem-construction-for-spellcasters/">Golem Construction for Spellcasters</a> v2.0 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/82008/graions-soundsets-pst-iwd-iwd2-bg-bg2-bgnpc-30-for-bg-sod-bg2-iwd-eet-ee-2-6/p1">Graion's Soundsets</a> (BG1 and BG2 sets are redundant for EET)</li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/grey-the-dog/">Grey the Dog</a> v1.0 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/HaerdalisFriendship/releases">Haer'Dalis Friendship</a> v1 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/984-haerdalis-romance/">Haer'Dalis Romance</a> v2.2</li>
-	<li><a href="http://www.shsforums.net/files/file/777-haiass-el-lobo/">Haiass el Lobo</a> v2.4 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/haldamir/">Haldamir NPC</a> v4</li>
-	<li><a href="https://forums.beamdog.com/discussion/76460/v1-48-helga-a-dwarven-priestess-of-haela-brightaxe-for-bg-ee-and-sod-and-eet/p1">Helga NPC</a> v1.48 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/134-heart-of-the-wood-item/">Heart of the Wood (Item)</a> v7.0.0 or above</li>
-	<li><a href="https://www.gibberlings3.net/forums/topic/32406-heroes-thieves-and-moneylenders-banterquestromance-mod-for-bg2/">Heroes, Thieves, and Moneylenders</a> v1.0 or above</li>
-	<li><a href="https://github.com/Gitjas/hiddenadventure/releases/latest">Hidden Adventures</a> vBeta4 or above</li>
-	<li><a href="https://github.com/Argent77/HQ-SoundClips-BG2EE/releases">High Quality soundclips for BG2EE extended content</a> v1.0 or above</li>
-	<li><a href="https://artisans-corner.com/house-rules/">House Rules Tweaks</a> 1.91 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/31-hubelpot-the-vegetable-merchant/">Hubelpot the Vegetable Merchant</a> v2.0.0 or above</li>
-	<li><a href="https://github.com/Raduziel/I-Hate-Undead-Kitpack/releases">I Hate Undead Kitpack</a> v2.4 or later</li>
-	<li><a href="https://github.com/SpellholdStudios/IEP_Extended_Banter/releases">IEP Extended Banters</a> v5.4 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/other/imoen4ever/">Imoen 4 Ever</a> v1 or above</li>
-	<li><a href="https://github.com/subtledoctor/Imoen-Can-Die/releases">Imoen Can Die</a> v1 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/ImoenFriendship/releases">Imoen Friendship</a> v3.3 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/other/imoenisstone/">Imoen is Stone</a> v1 or above</li>
-	<li><a href="http://imoen.blindmonkey.org/">Imoen Romance</a> v3.9 or above (updated recently, may need some testing)</li>
-	<li><a href="http://www.shsforums.net/files/file/1116-improved-archer-kit/">Improved Archer Kit</a> v2.2 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/804-improved-haerdalis-swords/">Improved Haer'Dalis Swords</a> v3.0.0 or above</li>
-	<li><a href="https://github.com/Argent77/A7-ImprovedShamanicDance/releases">Improved Shamanic Dance</a> v1.0 or above</li>
-	<li><a href="https://github.com/drake127/randomrolls">Improve randomness of dice rolls</a> v1.01 or above</li>
-	<li><a href="https://github.com/Pocket-Plane-Group/Indira_NPC/releases">Indira NPC for BG1 Tutu</a> v13 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/1091-isandirs-portrait-pack/">Isandir's Portrait Pack</a> v1.3 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/Isra_NPC_BG2/releases">Isra BG2</a> v3 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/Isra_NPC/releases">Isra NPC Mod (BG1)</a> v3.0 or above</li>
-	<li><a href="https://www.gibberlings3.net/forums/topic/25430-version-7-dev-release/">Item Randomiser</a> v7 dated 17020 or above</li>
-	<li><a href="https://github.com/Gibberlings3/ItemRevisions">Item Revisions</a> v4 Beta or above (Caution: makes short bows and axes unuseable for Shamans)</li>
-	<li><a href="https://github.com/Pocket-Plane-Group/Item_Upgrade/releases">Item Upgrade (Weimer's)</a> v45 or above</li>
-    <li><a href="https://forums.beamdog.com/discussion/88857/mod-iwdee-ui-bgee">IWDEE-UI-BGEE</a> 1.6 or above</li>
-    <li><a href="https://www.gibberlings3.net/mods/spells/iwdification/">IWDification</a> vBeta3 (no changes)</li>
-	<li><a href="http://www.shsforums.net/files/file/539-iylos/">Iylos NPC</a> v2.6 or above</li>
-	<li><a href="https://github.com/AstroBryGuy/JaheiraRecast">Jaheira Recast</a> v2.0 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/801-jans-alchemy/">Jan's Alchemy</a> v8.0.0 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/tweaks/jasteys-sod-tweak-pack/">Jastey's SoD Tweakpack</a> v1.0 or above</li>
-	<li><a href="https://www.gibberlings3.net/forums/topic/32227-bwl-jini-romance-mod-update/?tab=comments#comment-290238">Jini Romance</a> v3.1 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/18607/jkits-v7-kenshei-undead-eliminator-amazon-3-20-18/p1">JKits (Kenshei, Undead Eliminator, Amazon)</a> v7 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/the-journey-to-the-whin-hill/">The Journey to the Whin Hill</a> v1.2 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/74630/v1-6-kale-a-halfling-barbarian-for-bg-ee-sod-and-eet/p1">Kale NPC</a> v1.6 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/keldorn/">Keldorn Romance (berelinde's)</a> v1.0 or above</li>
-	<li><a href="https://github.com/Pocket-Plane-Group/Kelsey/releases">Kelsey NPC</a> v5 or above</li>
-	<li><a href="https://www.pocketplane.net/keto-npc/">Keto NPC</a> v5 or above</li>
-	<li><a href="https://www.gibberlings3.net/files/file/702-a-mod-for-the-orderly/">Keyring: A Mod for the Orderly</a> v7.0 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/khalid-bg2/">Khalid (BG2) NPC</a> v1.00 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/79293/mod-kit-le-rodeur-de-lombre-shadow-ranger-updated/p1">Kit Le RÃ´deur de l'ombre (Shadow Ranger)</a> v1.2 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/kivan/">Kivan and Deheriana Companions for BG2</a> v16</li>
-	<li><a href="https://github.com/SpellholdStudios/KorganFriendship/releases">Korgan Friendship</a> V1.0 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/KorgansRedemption/releases">Korgan's Redemption</a> v10.0.1 or above</li>
-	<li><a href="https://www.gibberlings3.net/forums/topic/30827-ui-lefreuts-enhanced-ui-bgee-sod-bg2ee-and-eet/">Lefreut's enhanced UI (BGEE, SoD, BG2EE and EET)</a> v3.9.1 or above (can be installed even after setup-EET_end)</li>
-	<li><a href="https://www.gibberlings3.net/forums/topic/25048-new-bg2-npc-lena/">Lena, tiefling NPC</a> v0.8 or above</li>
-	<li><a href="https://github.com/LCA-EET/Lichdom/releases">Lichdom</a> v1 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/1080-lighting-pack-shader-scripts-for-the-enhanced-edition/">Lighting Pack: Shader Scripts for the Enhanced Edition</a> v2.3 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/tweaks/lore/">Lore from Learning</a> v1 or above</li>
-	<li><a href="https://github.com/LCA-EET/LCA/releases">Love Conquers All</a> v1 or above</li>
-	<li><a href="https://github.com/LCA-EET/LCA_Explicit/releases">Love Conquers All (Explicit)</a> v1 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/Lucy_the_Wyvern/releases">Lucy the Wyvern</a> v4 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/560-the-luxley-family/">Luxley Family</a> v2.0.0 or above</li>
-	<li><a href="https://github.com/Argent77/A7-MagicStore/releases">Magic Store of Vergadain</a> v1.0 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/MazzyFriendship/releases">Mazzy Friendship</a> v3.2 or above</li>
-	<li><a href="https://github.com/Raduziel/Mercenary-Kit/releases">Mercenary (Fighter Kit)</a> v2.4 or above</li>
-	<li><a href="https://github.com/UnearthedArcana/Might_and_Guile/releases">Might and Guile (a tweak mod and kit pack for warriors and rogues)</a> v2.1 or above</li>
-	<li><a href="https://github.com/Raduziel/MilitiaOfficer-Kit">Militia Officer (Kit for PC or Khalid)</a> v1.3 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/MinscFriendship/releases">Minsc Friendship</a> v1.0 or above</li>
-	<li><a href="https://github.com/D2-mods/Misc-kits/releases">Misc kits: Kensaizerker, Monastery Swordsman, Jesterblade</a> v1.0 or above</li>
-	<li><a href="https://github.com/aquadrizzt/MonasticOrders/releases">Monastic Orders of Faerun</a> v0.42 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/18108/item-mod-more-style-for-mages-ranged-wizards-staffs-circlets-robe-visual-tweaks-now-in-iwd-ee/p1">More Styles for Mages</a> v1.55 or above</li>
-	<li><a href="https://github.com/CrevsDaak/m7multikit">Multiclassed Multikit Builder Mod</a> v0.27.3 or above</li>
-	<li><a href="https://github.com/lzenner/mptweaks/releases/latest">Multiplayer Tweaks</a></li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/murneth/">Mur'Neth NPC mod</a> v12 or above</li>
-	<li><a href="https://github.com/AstroBryGuy/NeeraBanters/releases">Neera Banters (BG:EE)</a> v0.9 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/1022-neera-expansion/">Neera Expansion</a> v1.3.0 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/953-nephele/">Nephele NPC</a> v2.4 or above</li>
-	<li><a href="http://athkatla.cob-bg.pl/download.php?id=1595">New travel system between Baldur's Gate City areas</a> v2.1 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/Ninde_NPC/releases">Ninde NPC</a> v3.0 or above</li>
-	<li><a href="http://www.shsforums.net/topic/61095-nostalgia-pack-putting-the-bg-back-in-bgee/">Nostalgia Pack - Putting the BG back in BG:EE</a> RC1 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/NTotSC/releases/latest">Northern Tales of the Sword Coast (NTotSC)</a> v2.1 or above</li>
-	<li><a href="https://github.com/Pocket-Plane-Group/NPC_Flirt_Packs/releases">NPC Flirt Packs</a> v1.04 or above</li>
-	<li><a href="https://github.com/Argent77/A7-NPCGenerator/releases">NPC Generator</a> v1.0 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/kits/npckit/">NPC Kitpack</a> v5</li>
-	<li><a href="https://www.gibberlings3.net/mods/tweaks/npctweak/">NPC Tweak</a> v6</li>
-	<li><a href="https://github.com/UnearthedArcana/NPC_EE/releases">NPC_EE</a> v2.3 or above</li>
-	<li><a href="https://github.com/thisisulb/NoSoDSound">NPCs keep BG1 sound sets during SoD</a> v1 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/of-heirlooms-and-classes/">Of Heirlooms and Classes</a> v1.3 or above</li>
-	<li><a href="https://github.com/ArtemiusI/Pai-Na-NPC-mod-for-BG2-EE/releases">Pai'Na NPC for BG2:EE</a> v1.2 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/1032-paintbg-for-bgee/">PaintBG for BG:EE</a> v2.1</li>
-	<li><a href="https://downloads.weaselmods.net/download/petsy/">Petsy Chattertone NPC</a> (since v4.01)</li>
-	<li><a href="https://github.com/SpellholdStudios/Phaere_NPC_Portraits_for_BG2/releases">Phaere NPC Portraits for BG2</a> v5.0 or above</li>
-	<li><a href="https://github.com/4Luke4/PnP-Potions/releases">PnP Potions</a> v1.2.2 or above</li>
-	<li><a href="https://github.com/D2-mods/Portrait-Gender-Separator-for-IE-games/releases">Portrait Gender Separator</a> v1.0 or above</li>
-	<li><a href="https://github.com/DaftHunk/Portraits-Portraits-Everywhere/">Portraits Portraits Everywhere</a> v1.01 or above</li>
-  <li><a href="https://www.gibberlings3.net/forums/topic/36598-protagonist-be-gone-for-bg2-bgt-tutu-bgee-bg2ee-and-eet/">Protagonist-Be-Gone!</a> v1.0 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/quayle-bg2/">Quayle BG2</a> v6.2 or above</li>
-	<li><a href="https://www.pocketplane.net/quest-pack/">Quest Pack</a> v3.3</li>
-	<li><a href="https://github.com/GraionDilach/RandomGraionMagic">Random Graion Magic</a></li>
-	<li><a href="https://github.com/GraionDilach/RandomGraionTweaks">Random Graion Tweaks</a></li>
-	<li><a href="https://forums.beamdog.com/discussion/71473/megamod-2-86-mazzy-romance-clara-npc-darkside-anomen-flying-aerie-for-the-evil-more/p1">Ratatoskr and BCaesar's Multi-Mod: All Things Mazzy, Clara (Human Hexxat) NPC, Darkside Anomen, and more</a> v1.038 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/1079-recolored-toolbar-buttons-for-bgee-bg2ee/">Recolored toolbar buttons for BG:EE &amp; BG2:EE</a> v4.1 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/77784/v1-37-recorder-a-gnome-lorekeeper-npc-for-bg-ee-sod-and-eet/p1">Recorder NPC</a> v1.37 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/Red_Dragon_Summoning_Spell">Red Dragon Summoning</a> v2.0.0 or above</li>
-	<li><a href="https://github.com/UnearthedArcana/refinements/releases">Refinements</a> v4 RC8 or above (only HLA and kit components have been updated to work with EE platforms)</li>
-	<li><a href="https://github.com/SpellholdStudios/Region_of_Terror/releases/latest">Region of Terror</a> v3.1 or above</li>
-	<li><a href="https://github.com/Raduziel/Relieve-Wizard-Slayer/releases">Relieve Wizard Slayer</a> (must be installed after Wizard Slayer Rebalancing)</li>
-	<li><a href="https://github.com/Pocket-Plane-Group/Reunion/releases">Reunion</a> v4 or above</li>
-	<li><a href="https://github.com/Argent77/A7-HiddenGameplayOptions/releases">Reveal Hidden Gameplay Options</a> v1.0 or above</li>
-	<li><a href="https://www.gibberlings3.net/forums/topic/32437-bwl-rjali-npc-mod-update/?tab=comments#comment-292271">Rjali NPC Mod</a> v12 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/other/road_to_discovery/">Road to Discovery (SoD Mod)</a></li>
-	<li><a href="http://www.shsforums.net/files/file/320-rogue-rebalancing-windows-version/">Rogue Rebalancing</a> v4.91 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/Rolles/releases">Rolles Safyer</a> v5.0.2 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/romantic-encounters/">Romantic Encounters for BGII</a> v12 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/790-ruad-rofhessa-item-upgrade/">Ruad Ro'fhessa Item Upgrade Mod</a> v29.0.0 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/Rupert_the_Dye_Merchant/releases">Rupert the Dye Merchant</a> current version</li>
-	<li><a href="https://baldursextendedworld.com/Sandrah/">Sandrah Saga</a> v2.04 or above. The Saga is composed of three parts: <a href="https://github.com/RoxanneSHS/SandrahEET/archive/master.zip?dl=1">Sandrah Appears</a>, <a href="https://github.com/RoxanneSHS/SandrahRtF/archive/master.zip?dl=1">Sandrah Return to Faerun</a>, and  <a href="https://github.com/RoxanneSHS/SandrahToT/archive/master.zip?dl=1">Sandrah Time of Troubles Revisited</a>.) Please note: do not download mods from that site blindly, as there are inofficial versions. Use the links in this list to download the original mods.</li>
-	<li><a href="http://www.shsforums.net/files/file/1139-saradas-magic-for-bg2/">Saradas Magic II</a> v1.8 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/sarah/">Sarah NPC</a> v5</li>
-	<li><a href="https://github.com/SpellholdStudios/SarevokFriendship/releases">Sarevok Friendship</a> v2.3</li>
-	<li><a href="http://www.shsforums.net/files/file/1110-sarevok-related-tweaks/">Sarevok related tweaks</a> v1.2 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/810-sarevok-romance/">Sarevok Romance</a> v1.3</li>
-	<li><a href="https://github.com/UnearthedArcana/Scales_of_Balance/releases">Scales of Balance</a> v5.1 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/shades-of-the-sword-coast/">Shades of the Sword Coast</a> v6 or above</li>
-	<li><a href="https://github.com/ArtemiusI/Shadow-Magic/">Shadow Magic</a> v1.85 or later</li>
-	<li><a href="https://github.com/SpellholdStudios/Shadows_over_Soubar/releases">Shadows Over Soubar</a> v1.14 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/87794/mod-sharpening-filter-bgee1-3-like-look-and-more-via-shaders/p1">Sharpening filter, BGEE1.3-like look and more via shaders</a></li>
-	<li><a href="https://www.gibberlings3.net/mods/other/shards/">Shards Of Ice</a> v6</li>
-	<li><a href="https://www.gibberlings3.net/forums/topic/32637-lcc-the-shuri-ninja-kit-mod-updated-to-v200/?tab=comments#comment-294145">Shuri Ninja Kit</a> v2.0.0 or above</li>
-	<li><a href="https://www.baldurs-gate.de/index.php?resources/jasteys-sir-ajantis-f%C3%BCr-bgii-npc.9/">Sir Ajantis BG2</a> v15.5 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/62163/npc-mod-sirene-npc-for-bg2-ee-v1-3-eet-compatibility-added/p1">Sirene NPC for BG2:EE</a> v1.3 or later (should have full continuity if BG:EE version is present)</li>
-	<li><a href="https://downloads.weaselmods.net/download/skie-the-cost-of-one-girls-soul/">Skie - The Cost of One Girl's Soul</a> v1.2 or above (The mod may not be compatible (story-wise) with other mods that add Soultaker and/or Skie plots to Baldur's Gate II)</li>
-	<li><a href="https://github.com/Gibberlings3/Skills-and-Abilities/releases">Skills and Abilities</a> v0.4-alpha or above</li>
-	<li><a href="http://www.shsforums.net/files/file/1150-skip-chateau-irenicus/">Skip Chateau Irenicus</a> v1.0 or above</li>
-	<li><a href="https://github.com/Austin-BG/SmilingImpCrossBanterMod/releases">Smiling Imp's Cross Banter Mod</a> v1.2 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/items/sod-to-bg2ee-item-upgrade/">SoD to Baldur's Gate 2: Enhanced Edition Item Upgrade</a> v2.0.0 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/Solaufein_Flirt_Pack/releases">Solaufein Flirt Pack for the Solaufein Romance Modification</a> v1.2 or above</li>
-	<li><a href="https://www.baldurs-gate.de/index.php?resources/jasteys-solaufein-npc-mod-for-bgii-solaufeins-rescue.13/">Solaufein's Rescue (Jastey's Solaufein)</a> v1 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/kits/sns/">Song and Silence</a> v8 or above</li>
-	<li><a href="https://github.com/Gibberlings3/SpellRevisions">Spell Revisions</a> vBeta or above</li>
-	<li><a href="https://github.com/thisisulb/SpiritHunterShamanKit">Spirit Hunter - a Shaman Kit</a> v0.3 or above</li>
-	<li><a href="https://github.com/thisisulb/SpiritwalkerKit">Spirit Walker - a Shaman Kit</a> v1.3 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/29604/mod-spontaneous-casting-for-clerics-and-druids-v1-32/p1">Spontaneous Casting For Clerics and Druids</a> v1.3 or above</li>
-	<li><a href="https://github.com/thisisulb/StormCallerKit">Storm Caller - a Shaman Kit</a> v3.0 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/StuffofTheMagi">Stuff of the Magi</a> v6.0.0 or above</li>
-	<li><a href="https://www.gibberlings3.net/forums/topic/31133-subtledocs-random-tweaks/">Subtledoc's Random Tweaks</a> v1 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/Super_Firkraag/releases">Super Firkraag</a> v1.6 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/kits/swordandfist/">Sword and Fist</a> (Monk kits) v8 or above</li>
-	<li><a href="https://github.com/Gibberlings3/SwordCoastStratagems/releases">Sword Coast Stratagems</a> v32 RC5 or above</li>
-	<li><a href="https://github.com/Argent77/A7-TestYourMettle/releases">Test Your Mettle!</a> v0.1-beta or above</li>
-	<li><a href="https://github.com/CrevsDaak/thalan">Thalantyr - Item Upgrade</a> v4.2.1 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/75663/kit-mod-the-artisans-kitpack/p1">The Artisan's Kitpack</a> v1.7 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/beaurin/">The Beaurin Legacy</a> v3.6 or above</li>
-	<li><a href="https://github.com/D2-mods/D2-Mira/releases">The Big Metal Unit mod</a> v1.0 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/quests/tbbs/">The Boareskyr Bridge Scene (SoD Mod)</a></li>
-	<li><a href="https://www.gibberlings3.net/mods/quests/thecalling/">The Calling</a></li>
-	<li><a href="https://www.gibberlings3.net/mods/quests/the-cowled-menace/">The Cowled Menace</a> v0.2.1 Beta or above</li>
-	<li><a href="https://github.com/InfinityMods/TDDz">The Darkest Day EE edition (TDDz)</a> v1.0 or above (please refer to the TDDz readme - this mod needs external resources from <a href="http://www.shsforums.net/files/file/323-the-darkest-day-v114/">original TDD</a>)</li>
-	<li><a href="https://github.com/TotalMilk90/gorgon/releases">The Gorgon's Eye</a> (Thieves Guild in Beregost) v3.0 or above</li>
-	<li><a href="https://github.com/K4thos/TGC1e">The Grey Clan Episode I: In Candlelight</a> v1.9 beta or above</li>
-	<li><a href="http://www.shsforums.net/files/file/1159-the-horde-beta/">The Horde</a> v1.2 beta or above</li>
-	<li><a href="http://www.shsforums.net/files/file/38-jerry-zinger-show/">The Jerry Zinger Show</a> v5.0 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/39-longer-road/">The Longer Road</a> v2.0.1 or above</li>
-	<li><a href="https://www.pocketplane.net/bg1tutu-enhancements/">The Lure of the Sirine's Call</a> v15 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/The_Minotaur_and_Lilacor/releases">The Minotaur and Lilacor</a> v1.6</li>
-	<li><a href="https://github.com/Pocket-Plane-Group/Sellswords/releases">The Sellswords</a> v7 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/151-the-slithering-menace-tob/">The Slithering Menace</a> v4.0.0 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/TheSwordofNoober/releases">The Sword of Noober</a> v2.0.1 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/The_Unusual_Oddities_Shop/releases">The Unusual Oddities Shop</a> v5.0 or above</li>
-	<li><a href="https://github.com/D2-mods/The-Workshop-Kitpack/releases">The Workshop Kitpack</a> v1.0 or above</li>
-	<li><a href="https://github.com/lzenner/themed_tweaks/releases/latest">Themed Tweaks</a></li>
-	<li><a href="https://github.com/Gibberlings3/Thieving-Skills-For-Bards/releases/latest">Thieving Skills for Bards</a></li>
-	<li><a href="https://github.com/Sampsca/ThrownHammers/releases">ThrownHammers</a> v6.0.1 or above</li>
-	<li><a href="https://github.com/Pocket-Plane-Group/Tiax_for_BGII/releases">Tiax NPC for BGII</a> v5 or above</li>
-	<li><a href="https://www.gibberlings3.net/forums/topic/30797-unearthed-arcana-present-tome-blood-more-options-for-arcane-casters/">Tome and Blood</a> v0.72 or above</li>
-	<li><a href="https://github.com/InfinityMods/TowerOfDeception/releases">Tower of Deception</a> v4.0.1 or above</li>
-	<li><a href="https://github.com/Gibberlings3/transitions/releases/latest">Transitions</a></li>
-	<li><a href="http://www.shsforums.net/files/file/1251-trials-of-the-luremaster-for-bg2ee/">Trials of the Luremaster</a> v1.0 or above</li>
-	<li><a href="https://www.pocketplane.net/turnabout/">Turnabout</a> vUpdatedForEE</li>
-	<li><a href="https://www.gibberlings3.net/mods/tweaks/tweaks/">Tweaks Anthology</a> v1 or later (previously known as BG2 Tweak Pack)</li>
-	<li><a href="https://www.gibberlings3.net/mods/npcs/tyris/">Tyris Flare</a> v8</li>
-	<li><a href="https://github.com/Pocket-Plane-Group/Under-Respresented_Items/releases">Under-Represented Items</a> v7 or above</li>
-	<li><a href="https://github.com/Pocket-Plane-Group/UnfinishedBusiness/releases">Unfinished Business</a> v27 RC1 or above</li>
-	<li><a href="https://github.com/Raduziel/Raduziels-Universal-Wizard-Spells/releases">Universal Wizard Spells</a> v2.5 or later</li>
-	<li><a href="https://forums.beamdog.com/discussion/56567/mod-bgii-ee-unofficial-item-pack/p1">Unofficial Item Pack</a> v2.7b CAUTION: do not install "SoD items import" component in EET to avoid duplication!</li>
-	<li><a href="http://www.shsforums.net/files/file/1041-valerie/">Valerie NPC for Baldur's Gate I</a> v1.2 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/ValygarFriendship/releases">Valygar Friendship</a> v1.0</li>
-	<li><a href="http://www.shsforums.net/files/file/1195-vampire-world-for-eet/">Vampire World</a> v0.42 or above CAUTION mod is still experimental according to author</li>
-	<li><a href="https://downloads.weaselmods.net/download/the-vanishing-of-skie-silvershield/">The Vanishing of Skie Silvershield</a> v2.2 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/varshoon/">Varshoon NPC</a> (since v6.0)</li>
-	<li><a href="https://github.com/SpellholdStudios/ViconiaFriendship/releases">Viconia Friendship</a> v4.3</li>
-	<li><a href="http://www.shsforums.net/files/file/882-viconia-revamped/">Viconia Revamped</a> v6.0</li>
-	<li><a href="https://forums.beamdog.com/discussion/74701/v1-57-vienxay-a-elven-shadowmage-npc-for-bg-ee-sod-and-eet/p1">Vienxay NPC</a> v1.57 or above</li>
-	<li><a href="https://github.com/ColossusChang/VoicesVoicesExtravaganza/releases">Voices Voices Extravaganza - Baldur's Gate (can be installed before or after EET_End)</a> v1.0 or above</li>
-	<li><a href="https://github.com/ColossusChang/VoicesVoicesExtravaganza-SOD/releases">Voices Voices Extravaganza - Baldur's Gate: Siege of Dragonspear (can be installed before or after EET_End)</a> v1.0 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/walahnan-bg1ee/">Walahnan (BG1EE) NPC</a> v2.0 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/walahnan-bg2ee/">Walahnan (BG2EE) NPC</a> v1.0 or above</li>
-  <li><a href="https://www.gibberlings3.net/forums/topic/38054-wares-of-the-planes-planescape-items-for-baldurs-gate/">Wares of the Planes</a> v1.0 or above</li>
-	<li><a href="https://forums.beamdog.com/discussion/69177/v0-1-warlock-mod/p1">Warlock kit</a></li>
-	<li><a href="https://downloads.weaselmods.net/download/weasels/">Weasels!</a> v1.2 or above</li>
-	<li><a href="https://www.gibberlings3.net/mods/quests/wheels/">Wheels of Prophecy</a> v6 or above</li>
-	<li><a href="https://github.com/BGforgeNet/bg2-wildmage">Wild Mage Additions</a> v2.3 beta or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/will-of-the-wisps/">Will of the Wisps</a> v1.2 or above</li>
-	<li><a href="https://github.com/UnearthedArcana/Will_to_Power/releases">Will to Power</a> v1.0 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/wilson-chronicles/">Wilson Chronicles</a> v1.8.1 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/960-wizard-slayer-rebalancing-v113-windows-version/">Wizard Slayer Rebalancing</a> v1.14 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/BP-BGT-Worldmap/releases">Worldmap</a> v10.2.3 or above</li>
-	<li><a href="https://github.com/Pocket-Plane-Group/Xan_for_BGII/releases">Xan for BG2</a> v17 or above</li>
-	<li><a href="https://www.pocketplane.net/bg1tutu-enhancements/">Xan's BG1 friendship path</a> v10 or above</li>
-	<li><a href="http://www.shsforums.net/files/file/710-xulaye/">Xulaye NPC</a> v2.0 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/Yeslick_NPC/releases">Yeslick SoA/ToB</a> v2.0 or above</li>
-	<li><a href="https://github.com/SpellholdStudios/YoshimoFriendship/releases">Yoshimo Friendship</a> v4.3 or above</li>
-	<li><a href="https://downloads.weaselmods.net/download/yoshimo-romance/">Yoshimo Romance</a> v4.0 or above</li>
-	<li><a href="http://www.baldursgatemods.com/forums/index.php?topic=7697.0">Zelink (Zelda &amp; Link) mod for Baldur's Gate 2 SoA</a> v1.0 or above</li>
-</ul>
-</div>
-
 </body>
 </html>
